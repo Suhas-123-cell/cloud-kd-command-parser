@@ -40,10 +40,39 @@ def validate(raw):
     return {k: obj[k] for k in KEYS}
 
 
+def pretranspose_linears(model):
+    """Replace every nn.Linear forward with x @ W^T where W^T is stored contiguous.
+
+    Same maths, different memory layout. Measured inside the linux/arm64 container on the
+    laptop: torch's F.linear path (OpenBLAS, transposed weight) ran the 512->50304 lm_head in
+    ~26 ms, while a matmul with a pre-transposed contiguous weight took ~5 ms. Costs one extra
+    copy of the weights (~+150 MB for pythia-70m), so the original weights are released.
+    """
+    import torch
+
+    for module in model.modules():
+        if isinstance(module, torch.nn.Linear) and not hasattr(module, "_wt"):
+            wt = module.weight.detach().t().contiguous()
+            module._wt = wt
+            module._b = None if module.bias is None else module.bias.detach()
+
+            def fwd(x, m=module):
+                y = x.matmul(m._wt)
+                return y if m._b is None else y.add_(m._b)
+
+            module.forward = fwd
+    # embed_out (lm_head) shares no storage with the input embedding in pythia, so the
+    # original [out, in] weights can be dropped to keep memory flat.
+    for module in model.modules():
+        if isinstance(module, torch.nn.Linear) and hasattr(module, "_wt"):
+            module.weight = torch.nn.Parameter(torch.empty(0), requires_grad=False)
+    return model
+
+
 class Parser:
     """Loads a causal LM + tokenizer from a local directory and generates raw JSON text."""
 
-    def __init__(self, model_dir, max_new_tokens=64, threads=None):
+    def __init__(self, model_dir, max_new_tokens=64, threads=None, fast_linear=True, stop_at_newline=True):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -53,8 +82,10 @@ class Parser:
         self.tok = AutoTokenizer.from_pretrained(model_dir)
         self.model = AutoModelForCausalLM.from_pretrained(model_dir, torch_dtype=torch.float32)
         self.model.eval()
+        if fast_linear:
+            pretranspose_linears(self.model)
         self.max_new_tokens = int(max_new_tokens)
-        newline_ids = self.tok.encode("\n")
+        newline_ids = self.tok.encode("\n") if stop_at_newline else []
         self.stop_ids = {self.tok.eos_token_id, *newline_ids}
 
     def generate(self, command):

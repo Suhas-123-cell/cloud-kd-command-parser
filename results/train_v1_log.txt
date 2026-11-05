@@ -1,0 +1,7 @@
+.venv/bin/python training/train.py --config training/config.yaml 
+training on 1500 records (dataset sha256 c0f46591a608...)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+epoch 1/8  loss 0.8739  (39s)

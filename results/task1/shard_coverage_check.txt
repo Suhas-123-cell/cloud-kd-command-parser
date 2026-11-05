@@ -1,0 +1,5 @@
+shard-0: 1500 records, records not matching line%2==0: 0
+shard-1: 1500 records, records not matching line%2==1: 0
+pool ids: 3000 | distinct ids in shards: 3000
+missing (gaps): 0 | extra: 0 | repeated: 0
+duplicate command texts in pool: 50
