@@ -89,6 +89,12 @@ verify-clean: .venv/.tools ## re-run clean.py on the committed shards and compar
 train: .venv/.train ## train the student; make train SUBSET=50 for the quick check
 	$(PY) training/train.py --config training/config.yaml $(if $(SUBSET),--subset $(SUBSET) --output-dir models/subset-$(SUBSET) --loss-csv training/loss_subset$(SUBSET).csv)
 
+train-v2: .venv/.train ## second version for the rolling update: same config, different seed
+	$(PY) training/train.py --config training/config.yaml --seed 7 --model-version v2 --output-dir models/v2 --loss-csv training/loss_v2.csv
+
+upload-models: .venv/.tools ## upload locally trained models/v1 and models/v2 to s3://models (verifies checksums)
+	./scripts/seed_models.sh $(REPO) $(RELEASE_TAG)
+
 eval-student: .venv/.train ## score models/v1 on validation.jsonl
 	$(PY) training/predict.py models/v1/model-v1 data/validation.jsonl results/student_v1_validation_predictions.jsonl
 	python3 tools/score.py results/student_v1_validation_predictions.jsonl data/validation.jsonl --out results/student_v1_validation.json
@@ -106,4 +112,4 @@ nacl: ## check the NACL against the sample packets
 loadtest: .venv/.tools ## the standard 2-minute Locust run against the Ingress
 	.venv/bin/locust -f tools/locustfile.py --headless --users 4 --spawn-rate 4 --run-time 2m --host $(HOST) --csv results/loadtest
 
-.PHONY: help venv up down cluster storage seed-data seed-models images deploy label clean-data verify-clean train eval-student lint test nacl loadtest
+.PHONY: help venv up down cluster storage seed-data seed-models images deploy label clean-data verify-clean train train-v2 upload-models eval-student lint test nacl loadtest
