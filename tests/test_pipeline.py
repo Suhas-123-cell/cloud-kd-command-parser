@@ -145,3 +145,26 @@ def test_readyz_503_until_loaded_healthz_always_200(make_client):
         assert c.post("/parse", json={"text": "x"}).status_code == 503
     with make_client() as c:
         assert c.get("/readyz").status_code == 200
+
+
+def test_validate_never_raises_on_odd_json():
+    assert validate('{"intent": ["a"], "date": null, "time": null, "place": null}') is None
+    assert validate("[" * 100000) is None
+    assert validate(None) is None
+
+
+def test_service_schema_copy_matches_kit_schema():
+    assert (ROOT / "service" / "schema.json").read_text() == (ROOT / "data" / "schema.json").read_text()
+
+
+class BrokenParser:
+    def generate(self, text):
+        raise RuntimeError("boom")
+
+
+def test_generation_error_returns_exact_500_body(make_client):
+    with make_client() as c:
+        import app as app_module
+        app_module.state["parser"] = BrokenParser()
+        r = c.post("/parse", json={"text": "x"})
+    assert r.status_code == 500 and r.json() == {"error": "invalid_model_output"}

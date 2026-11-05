@@ -1,0 +1,14 @@
+$ docker run ... -e FAULT_INJECT=1 cc-kd/parser:1.0
+$ curl -i -XPOST localhost:8001/parse -d '{"text":"set an alarm for seven am"}'
+HTTP/1.1 500 Internal Server Error
+date: Thu, 05 Nov 2026 20:30:04 GMT
+server: uvicorn
+x-model-version: v1
+x-served-by: 52cec0d300f3
+content-length: 32
+content-type: application/json
+
+{"error":"invalid_model_output"}
+
+2026-11-05 20:30:04,607 INFO model v1 ready in 4.2s (pod 52cec0d300f3, fault_inject=True)
+2026-11-05 20:30:05,895 WARNING invalid model output for 'set an alarm for seven am': 'not json'

@@ -1,0 +1,83 @@
+waiting for /readyz ...
+HTTP/1.1 200 OK
+date: Thu, 05 Nov 2026 20:29:24 GMT
+server: uvicorn
+content-length: 39
+content-type: application/json
+
+{"status":"ready","model_version":"v1"}
+ 1 200   736.1 ms  {"intent":"calendar_remove","date":"upcoming","time":null,"place":null}
+ 2 200   719.9 ms  {"intent":"alarm_set","date":"sunday","time":"five in the morning","place":null}
+ 3 200   700.8 ms  {"intent":"datetime_query","date":null,"time":"washington","place":"washington"}
+ 4 200   782.7 ms  {"intent":"datetime_query","date":null,"time":null,"place":null}
+ 5 200   704.1 ms  {"intent":"alarm_set","date":"tuesday","time":"six pm","place":null}
+ 6 200   613.7 ms  {"intent":"calendar_set","date":"this afternoon","time":null,"place":null}
+ 7 200   613.0 ms  {"intent":"datetime_query","date":"november","time":null,"place":null}
+ 8 200   678.5 ms  {"intent":"calendar_query","date":"this weekend","time":null,"place":null}
+ 9 200   724.8 ms  {"intent":"datetime_query","date":null,"time":"central time zone","place":"central time zone"}
+10 200   694.1 ms  {"intent":"calendar_set","date":"my birthday","time":null,"place":"dallas"}
+11 200   701.8 ms  {"intent":"weather_query","date":"this week","time":null,"place":null}
+12 200   673.1 ms  {"intent":"datetime_query","date":null,"time":null,"place":"pst"}
+13 200   623.9 ms  {"intent":"recommendation_events","date":null,"time":null,"place":"area"}
+14 200   691.8 ms  {"intent":"calendar_query","date":"next morning","time":"afternoon","place":null}
+15 200   616.6 ms  {"intent":"calendar_remove","date":"today","time":null,"place":null}
+16 200   588.4 ms  {"intent":"calendar_set","date":null,"time":null,"place":null}
+17 200   683.5 ms  {"intent":"alarm_set","date":null,"time":"this time","place":null}
+18 200   696.8 ms  {"intent":"recommendation_events","date":"tomorrow","time":null,"place":null}
+19 200   696.7 ms  {"intent":"recommendation_events","date":null,"time":null,"place":null}
+20 200   622.8 ms  {"intent":"weather_query","date":null,"time":null,"place":"our city"}
+21 200   605.8 ms  {"intent":"recommendation_events","date":null,"time":null,"place":null}
+22 200   676.4 ms  {"intent":"recommendation_events","date":null,"time":null,"place":null}
+23 200   693.7 ms  {"intent":"calendar_set","date":"every june first","time":null,"place":null}
+24 200   531.8 ms  {"intent":"datetime_query","date":null,"time":null,"place":null}
+25 200   699.5 ms  {"intent":"datetime_query","date":null,"time":null,"place":"new york"}
+26 200   783.2 ms  {"intent":"weather_query","date":null,"time":"five days","place":"new york city"}
+27 200   602.1 ms  {"intent":"calendar_query","date":"today","time":null,"place":null}
+28 200   611.5 ms  {"intent":"weather_query","date":null,"time":"here","place":null}
+29 200   696.0 ms  {"intent":"alarm_query","date":null,"time":"right now","place":null}
+30 200   667.8 ms  {"intent":"alarm_set","date":null,"time":"ten am","place":null}
+31 200   632.7 ms  {"intent":"recommendation_events","date":"today","time":null,"place":null}
+32 200   669.5 ms  {"intent":"calendar_query","date":"this year","time":null,"place":null}
+33 200   725.7 ms  {"intent":"alarm_set","date":"next tuesday","time":"eight hundred am","place":null}
+34 200   583.6 ms  {"intent":"calendar_query","date":null,"time":null,"place":null}
+35 200   620.6 ms  {"intent":"alarm_query","date":"today","time":null,"place":null}
+36 200   800.9 ms  {"intent":"alarm_query","date":"seven am","time":"seven am","place":null}
+37 200   783.0 ms  {"intent":"calendar_set","date":"tomorrow","time":"seven","place":null}
+38 200   884.6 ms  {"intent":"calendar_set","date":"monday","time":"six","place":"drul"}
+39 200   803.2 ms  {"intent":"recommendation_events","date":null,"time":null,"place":"wyatt"}
+40 200   726.6 ms  {"intent":"alarm_set","date":null,"time":" hour","place":null}
+41 200   780.2 ms  {"intent":"datetime_query","date":null,"time":null,"place":"california"}
+42 200   722.5 ms  {"intent":"datetime_query","date":null,"time":null,"place":"beijing"}
+43 200   671.8 ms  {"intent":"alarm_query","date":null,"time":null,"place":null}
+44 200   616.8 ms  {"intent":"datetime_query","date":"the fifteenth","time":null,"place":null}
+45 200   702.5 ms  {"intent":"alarm_set","date":"next tuesday","time":null,"place":null}
+46 200   677.0 ms  {"intent":"calendar_set","date":"this friday","time":null,"place":null}
+47 200   537.0 ms  {"intent":"datetime_query","date":null,"time":null,"place":null}
+48 200   696.0 ms  {"intent":"calendar_remove","date":null,"time":"one pm","place":null}
+49 200   765.7 ms  {"intent":"calendar_query","date":"first of january","time":null,"place":"alexa"}
+50 200   723.8 ms  {"intent":"calendar_set","date":"today","time":"one pm","place":"joe"}
+{
+  "requests": 50,
+  "status_counts": {
+    "200": 50
+  },
+  "latency_ms_mean": 685.1,
+  "latency_ms_p50": 694.1,
+  "latency_ms_p95": 783.2,
+  "latency_ms_max": 884.6
+}
+# cgroup v2 counters read inside the container after the 50 requests
+memory.max  = 1073741824
+memory.peak = 790515712 bytes
+cpu.max     = 100000 100000
+memory.events:
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+
+# docker inspect
+OOMKilled=false Status=running RestartCount=0 NanoCpus=1000000000 Memory=1073741824
+highest docker stats sample: 477.9MiB

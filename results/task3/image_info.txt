@@ -1,0 +1,28 @@
+$ docker image inspect cc-kd/parser:1.0 --format '{{.Size}}'
+247323891 bytes (arm64)
+$ docker images cc-kd/parser:1.0
+IMAGE              ID             DISK USAGE   CONTENT SIZE   EXTRA
+cc-kd/parser:1.0   d4323241cd7c       1.21GB          247MB        
+$ docker history cc-kd/parser:1.0
+0B	CMD ["uvicorn" "app:app" "--host" "0.0.0.0" "--port" "8000" "--workers" "1" "--log-level" "info"]
+0B	EXPOSE [8000/tcp]
+0B	USER 1000
+69.6kB	RUN /bin/sh -c useradd --uid 1000 --create-home app # buildkit
+28.7kB	COPY schema.json inference.py app.py ./ # buildkit
+800MB	RUN /bin/sh -c pip install --no-deps --index-url https://download.pytorch.org/whl/cpu torch==2.5.1  && pip install -r requirements.txt  && pip check # buildkit
+12.3kB	COPY requirements.txt . # buildkit
+8.19kB	WORKDIR /app
+0B	ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 TOKENIZERS_PARALLELISM=false
+0B	CMD ["python3"]
+16.4kB	RUN /bin/sh -c set -eux;  for src in idle3 pip3 pydoc3 python3 python3-config; do   dst="$(echo "$src" | tr -d 3)";   [ -s "/usr/local/bin/$src" ];   [ ! -e "/usr/local/bin/$dst" ];   ln -svT "
+48.5MB	RUN /bin/sh -c set -eux;   savedAptMark="$(apt-mark showmanual)";  apt-get update;  apt-get install -y --no-install-recommends   dpkg-dev   gcc   gnupg   libbluetooth-dev   libbz2-dev   libc6-d
+0B	ENV PYTHON_SHA256=c909157bb25ec114e5869124cc2a9c4a4d4c1e957ca4ff553f1edc692101154e
+0B	ENV PYTHON_VERSION=3.12.8
+0B	ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
+10.3MB	RUN /bin/sh -c set -eux;  apt-get update;  apt-get install -y --no-install-recommends   ca-certificates   netbase   tzdata  ;  rm -rf /var/lib/apt/lists/* # buildkit
+0B	ENV LANG=C.UTF-8
+0B	ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+108MB	# debian.sh --arch 'arm64' out/ 'bookworm' '@1738540800'
+
+$ docker run --rm --entrypoint sh cc-kd/parser:1.0 -c 'find / -name "*.safetensors" -o -name "pytorch_model*.bin" 2>/dev/null | wc -l'
+0

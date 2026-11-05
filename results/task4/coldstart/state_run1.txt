@@ -1,0 +1,24 @@
+--- 20:09:03
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     11m
+pod: parser-5f4b64b9d8-5z8vl   Pending   false   v1
+pod: parser-5f4b64b9d8-847bs   Pending   false   v1
+pod: parser-5f4b64b9d8-9tdgt   Running   true    v1
+pod: parser-5f4b64b9d8-qstwc   Running   true    v1
+endpoints ready= notReady=
+--- 20:09:05
+deploy desired,ready,updated,available: 2     <none>   2     <none>
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     11m
+pod: parser-5f4b64b9d8-5z8vl   Running   false   v1
+pod: parser-5f4b64b9d8-847bs   Running   false   v1
+pod: parser-5f4b64b9d8-9tdgt   Running   true    v1
+pod: parser-5f4b64b9d8-qstwc   Running   true    v1
+endpoints ready= notReady=parser-5f4b64b9d8-847bs parser-5f4b64b9d8-5z8vl
+--- 20:09:07
+deploy desired,ready,updated,available: 2     <none>   2     <none>
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     11m
+pod: parser-5f4b64b9d8-5z8vl   Running   false   v1
+pod: parser-5f4b64b9d8-847bs   Running   false   v1
+pod: parser-5f4b64b9d8-9tdgt   Running   true    v1
+pod: parser-5f4b64b9d8-qstwc   Running   true    v1
+endpoints ready=parser-5f4b64b9d8-847bs parser-5f4b64b9d8-5z8vl notReady=

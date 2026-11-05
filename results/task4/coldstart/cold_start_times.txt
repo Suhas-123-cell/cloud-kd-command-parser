@@ -1,0 +1,9 @@
+run=1 pod=parser-5f4b64b9d8-5z8vl created=2026-11-05T20:09:03Z ready=2026-11-05T20:09:07Z seconds=4
+run=1 pod=parser-5f4b64b9d8-847bs created=2026-11-05T20:09:03Z ready=2026-11-05T20:09:07Z seconds=4
+run=2 pod=parser-5f4b64b9d8-jn7kh created=2026-11-05T20:09:08Z ready=2026-11-05T20:09:12Z seconds=4
+run=2 pod=parser-5f4b64b9d8-zc9c9 created=2026-11-05T20:09:08Z ready=2026-11-05T20:09:12Z seconds=4
+run=3 pod=parser-5f4b64b9d8-jftpg created=2026-11-05T20:09:14Z ready=2026-11-05T20:09:17Z seconds=3
+run=3 pod=parser-5f4b64b9d8-lsct7 created=2026-11-05T20:09:14Z ready=2026-11-05T20:09:17Z seconds=3
+per-run cold start (slowest pod, s): {1: 4, 2: 4, 3: 3}
+median over 3 runs: 4 s
+all pods: [3, 3, 4, 4, 4, 4]; median per pod: 4.0 s

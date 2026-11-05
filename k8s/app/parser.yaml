@@ -38,7 +38,6 @@ spec:
             - {name: S3_ENDPOINT, value: "http://seaweedfs.data.svc.cluster.local:8333"}
             - {name: MAX_NEW_TOKENS, value: "64"}
             - {name: FAULT_INJECT, value: "0"}
-            - {name: TORCH_THREADS, value: "1"}
             - name: POD_NAME
               valueFrom:
                 fieldRef: {fieldPath: metadata.name}

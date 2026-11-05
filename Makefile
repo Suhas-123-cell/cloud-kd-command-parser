@@ -21,7 +21,10 @@ help:
 
 # ---------- Python environments ----------
 .venv/.tools: requirements-dev.txt
-	@[ -x $(PY) ] || { if command -v uv >/dev/null; then uv venv -q -p 3.12 .venv; else python3 -m venv .venv; fi; }
+	@[ -x $(PY) ] || { if command -v uv >/dev/null; then uv venv -q -p 3.12 .venv; \
+	  else PYBIN=$$(command -v python3.12 || command -v python3.11 || command -v python3); \
+	  echo "using $$PYBIN (torch 2.5.1 needs Python 3.9-3.12; install uv or python3.12 if this fails)"; \
+	  $$PYBIN -m venv .venv; fi; }
 	@if command -v uv >/dev/null; then uv pip install -q -p $(PY) -r requirements-dev.txt; \
 	 else $(PY) -m pip install -q -r requirements-dev.txt; fi
 	@touch $@
@@ -63,12 +66,16 @@ seed-models: .venv/.tools ## download model-v1/v2 from the GitHub Release, verif
 	./scripts/seed_models.sh $(REPO) $(RELEASE_TAG)
 
 images: ## build the service image and import it into the cluster
-	docker build -f service/Dockerfile -t $(PARSER_IMG) .
+	docker build -t $(PARSER_IMG) service/
 	k3d image import -c $(CLUSTER) $(PARSER_IMG)
 
 deploy: ## apply the app manifests and wait for the rollout
 	kubectl apply -f k8s/app/parser.yaml
 	kubectl -n app rollout status deploy/parser --timeout=600s
+	@echo "waiting for the Ingress route (Traefik may still be syncing) ..."
+	@for i in $$(seq 1 90); do \
+	  [ "$$(curl -s -o /dev/null -w '%{http_code}' -XPOST $(HOST)/parse -H 'Content-Type: application/json' -d '{"text":"what time is it"}')" = 200 ] && echo "/parse answers through the Ingress" && exit 0; \
+	  sleep 2; done; echo "Ingress did not answer in time" >&2; exit 1
 
 # ---------- Task 1: teacher labelling ----------
 label: ## run the two-shard teacher Job in namespace pipeline (needs Ollama + phi3.5 on the host)
