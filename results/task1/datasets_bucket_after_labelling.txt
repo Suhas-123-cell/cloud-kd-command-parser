@@ -1,0 +1,3 @@
+      197541  s3://datasets/commands_pool.jsonl
+      265852  s3://datasets/teacher/shard-0.jsonl
+      266568  s3://datasets/teacher/shard-1.jsonl

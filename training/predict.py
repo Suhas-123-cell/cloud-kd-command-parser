@@ -19,8 +19,10 @@ def main():
     ap.add_argument("gold")
     ap.add_argument("out")
     ap.add_argument("--max-new-tokens", type=int, default=64)
+    ap.add_argument("--no-newline-stop", action="store_true",
+                    help="stop only at <eos> or the token cap (shows what an untrained model really writes)")
     a = ap.parse_args()
-    parser = Parser(a.model, max_new_tokens=a.max_new_tokens)
+    parser = Parser(a.model, max_new_tokens=a.max_new_tokens, stop_at_newline=not a.no_newline_stop)
     rows = [json.loads(ln) for ln in open(a.gold, encoding="utf-8") if ln.strip()]
     t0 = time.time()
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
