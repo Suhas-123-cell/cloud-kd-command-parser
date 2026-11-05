@@ -18,7 +18,7 @@ $ docker history cc-kd/parser:1.0
 48.5MB	RUN /bin/sh -c set -eux;   savedAptMark="$(apt-mark showmanual)";  apt-get update;  apt-get install -y --no-install-recommends   dpkg-dev   gcc   gnupg   libbluetooth-dev   libbz2-dev   libc6-d
 0B	ENV PYTHON_SHA256=c909157bb25ec114e5869124cc2a9c4a4d4c1e957ca4ff553f1edc692101154e
 0B	ENV PYTHON_VERSION=3.12.8
-0B	ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
+0B	ENV GPG_KEY=<public Python release-signing key fingerprint, redacted>
 10.3MB	RUN /bin/sh -c set -eux;  apt-get update;  apt-get install -y --no-install-recommends   ca-certificates   netbase   tzdata  ;  rm -rf /var/lib/apt/lists/* # buildkit
 0B	ENV LANG=C.UTF-8
 0B	ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin

@@ -1,0 +1,3 @@
+# False positive: 'ENV GPG_KEY=...' in saved 'docker history' output is the public fingerprint of the
+# CPython release-signing key from the python:3.12 base image, not a credential (value now redacted).
+ed0e83d2ac36da1ff0d7514d994fac692c39c0fa:results/task3/image_info.txt:generic-api-key:21
