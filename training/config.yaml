@@ -1,0 +1,22 @@
+# Training configuration for sequence-level distillation of phi3.5 into pythia-70m.
+# `make train` reads only this file.  `make train SUBSET=50` overrides max_train_examples.
+model_name: EleutherAI/pythia-70m
+model_revision: main
+seed: 42
+learning_rate: 0.0005
+batch_size: 16
+num_epochs: 8
+max_seq_length: 96
+weight_decay: 0.0
+warmup_ratio: 0.05
+max_train_examples: 1500        # assignment limit: the first 1,500 cleaned records
+train_file: datasets/v1/train.jsonl
+train_uri: s3://datasets/v1/train.jsonl
+output_dir: models/v1
+model_version: v1
+library_versions:
+  python: "3.12"
+  torch: "2.5.1"
+  transformers: "4.46.3"
+  accelerate: "1.1.1"
+  pyyaml: "6.0.2"

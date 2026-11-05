@@ -1,0 +1,93 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+    tags: [final]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      model:
+        description: "Model to evaluate: 'release' (model-v1 from the GitHub Release) or 'untrained' (base pythia-70m, expected to FAIL the gate)"
+        required: true
+        default: release
+        type: choice
+        options: [release, untrained]
+
+permissions:
+  contents: read
+
+env:
+  RELEASE_TAG: models
+  PYTHON_VERSION: "3.12"
+
+jobs:
+  lint:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "${{ env.PYTHON_VERSION }}"}
+      - run: pip install ruff==0.8.4
+      - run: ruff check .
+
+  secret-scan:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - name: gitleaks (full history)
+        run: |
+          curl -fsSL https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz | tar -xz gitleaks
+          ./gitleaks git --redact --verbose --exit-code 1 .
+
+  unit-tests:
+    needs: lint
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "${{ env.PYTHON_VERSION }}"}
+      - run: pip install -r requirements-dev.txt
+      - run: python -m pytest -v tests
+
+  model-evaluation:
+    needs: unit-tests
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "${{ env.PYTHON_VERSION }}"}
+      - name: Install CPU-only inference stack
+        run: |
+          pip install --index-url https://download.pytorch.org/whl/cpu torch==2.5.1
+          pip install -r training/requirements.txt
+      - name: Download model-v1 from the GitHub Release and verify its checksum
+        if: ${{ github.event.inputs.model != 'untrained' }}
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          gh release download "$RELEASE_TAG" --pattern model-v1.tar.gz --dir /tmp/release
+          expected=$(head -1 models/v1/model.sha256 | cut -d' ' -f1)
+          echo "$expected  /tmp/release/model-v1.tar.gz" | sha256sum --check
+          tar -xzf /tmp/release/model-v1.tar.gz -C /tmp/release
+          echo "MODEL=/tmp/release/model-v1" >> "$GITHUB_ENV"
+      - name: Use the untrained base model (deliberately bad, to show the gate failing)
+        if: ${{ github.event.inputs.model == 'untrained' }}
+        run: echo "MODEL=EleutherAI/pythia-70m" >> "$GITHUB_ENV"
+      - name: Predict on validation.jsonl and score
+        run: |
+          mkdir -p ci-results
+          python training/predict.py "$MODEL" data/validation.jsonl ci-results/predictions.jsonl
+          python tools/score.py ci-results/predictions.jsonl data/validation.jsonl --out ci-results/score.json
+      - uses: actions/upload-artifact@v4
+        with: {name: evaluation, path: ci-results/}
+
+  quality-gate:
+    needs: model-evaluation
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {name: evaluation, path: ci-results/}
+      - name: score.py --min-validity 95
+        run: python tools/score.py ci-results/predictions.jsonl data/validation.jsonl --min-validity 95
