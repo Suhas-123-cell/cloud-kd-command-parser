@@ -1,0 +1,15 @@
+.venv/
+.secrets/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+# model weights never go into Git: they live in SeaweedFS and the GitHub Release
+artifacts/
+*.safetensors
+*.bin
+*.pt
+*.tar.gz
+.DS_Store
+models/*/model-v*/
+models/*/*.tar.gz

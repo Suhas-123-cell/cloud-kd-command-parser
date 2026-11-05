@@ -1,0 +1,27 @@
+# k3d cluster for the CS3081 mini project.  Create with:  k3d cluster create --config cluster/k3d.yaml
+apiVersion: k3d.io/v1alpha5
+kind: Simple
+metadata:
+  name: cc-kd
+servers: 1
+agents: 0
+image: rancher/k3s:v1.31.4-k3s1
+kubeAPI:
+  hostIP: "127.0.0.1"
+  hostPort: "6550"
+ports:
+  # Traefik ingress -> http://localhost:8080
+  - port: 127.0.0.1:8080:80
+    nodeFilters:
+      - loadbalancer
+  # SeaweedFS S3 NodePort -> http://localhost:8333 (host-side scripts only)
+  - port: 127.0.0.1:8333:30333
+    nodeFilters:
+      - server:0
+options:
+  k3d:
+    wait: true
+    timeout: "180s"
+  kubeconfig:
+    updateDefaultKubeconfig: true
+    switchCurrentContext: true

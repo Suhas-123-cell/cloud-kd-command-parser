@@ -1,0 +1,10 @@
+# Host-side tools: S3 seeding, tests, lint, load test. Light (no torch).
+boto3==1.35.76
+requests==2.32.3
+pyyaml==6.0.2
+fastapi==0.115.6
+pydantic==2.10.3
+httpx==0.28.1
+pytest==8.3.4
+ruff==0.8.4
+locust==2.32.4

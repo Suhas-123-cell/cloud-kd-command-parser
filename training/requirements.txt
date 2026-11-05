@@ -1,0 +1,11 @@
+# Training / offline evaluation (CPU). torch comes from the CPU wheel index (see Makefile).
+torch==2.5.1
+transformers==4.46.3
+tokenizers==0.20.3
+safetensors==0.8.0
+huggingface-hub==0.36.2
+accelerate==1.1.1
+numpy==2.5.4
+pyyaml==6.0.2
+boto3==1.35.76
+requests==2.32.3
