@@ -1,0 +1,19 @@
+.venv/bin/python training/train.py --config training/config.yaml --seed 7 --model-version v2 --output-dir models/v2 --loss-csv training/loss_v2.csv
+training on 1500 records (dataset sha256 c0f46591a608...)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+epoch 1/8  loss 0.8600  (32s)
+epoch 2/8  loss 0.4481  (58s)
+epoch 3/8  loss 0.3216  (84s)
+epoch 4/8  loss 0.1958  (110s)
+epoch 5/8  loss 0.1351  (136s)
+epoch 6/8  loss 0.0855  (162s)
+epoch 7/8  loss 0.0468  (188s)
+epoch 8/8  loss 0.0193  (214s)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+saved /Users/suhasdev/Documents/230101094/models/v2/model-v2 and /Users/suhasdev/Documents/230101094/models/v2/model-v2.tar.gz (sha256 4b1a59111ea4594b470377b6cf69e504dbe5be44639dd75b6b94b3533a6b8ed8)

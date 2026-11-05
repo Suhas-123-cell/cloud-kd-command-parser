@@ -5,3 +5,15 @@ To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
 epoch 1/8  loss 0.8739  (39s)
+epoch 2/8  loss 0.3909  (76s)
+epoch 3/8  loss 0.2346  (105s)
+epoch 4/8  loss 0.1610  (133s)
+epoch 5/8  loss 0.1016  (162s)
+epoch 6/8  loss 0.0636  (191s)
+epoch 7/8  loss 0.0402  (221s)
+epoch 8/8  loss 0.0181  (252s)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+saved /Users/suhasdev/Documents/230101094/models/v1/model-v1 and /Users/suhasdev/Documents/230101094/models/v1/model-v1.tar.gz (sha256 d0800d7167e527835836f42878196e76f56143add21b4011485957728e76f15d)
