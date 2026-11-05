@@ -1,0 +1,32 @@
+{
+  "v0_first_draft_no_stop": {
+    "json_validity": 81.0,
+    "intent_accuracy": 63.0,
+    "date_accuracy": 53.0,
+    "time_accuracy": 73.0,
+    "place_accuracy": 75.0,
+    "full_frame": 32.0,
+    "examples": 100,
+    "missing_predictions": 0
+  },
+  "v1_final_prompt_no_stop": {
+    "json_validity": 89.0,
+    "intent_accuracy": 69.0,
+    "date_accuracy": 66.0,
+    "time_accuracy": 81.0,
+    "place_accuracy": 81.0,
+    "full_frame": 41.0,
+    "examples": 100,
+    "missing_predictions": 0
+  },
+  "v1_final_prompt_stop_blankline": {
+    "json_validity": 99.0,
+    "intent_accuracy": 77.0,
+    "date_accuracy": 71.0,
+    "time_accuracy": 89.0,
+    "place_accuracy": 86.0,
+    "full_frame": 41.0,
+    "examples": 100,
+    "missing_predictions": 0
+  }
+}

@@ -13,8 +13,8 @@ edit those replies.
 
 ## How the output was checked
 
-AI-written code was not trusted because it looked right; every claim in the report is tied to a
-command whose output is saved under `results/`.
+AI-written code was not trusted because it looked right. Measured claims in the report point to a saved
+command output under `results/`; the one exception (an overwritten first recovery run) is labelled as such.
 
 - **Provided scorers are the ground truth.** Model quality numbers come only from the kit's
   `tools/score.py`; the NACL is checked only with the kit's `tools/nacl_sim.py`.
@@ -26,8 +26,8 @@ command whose output is saved under `results/`.
 - **Unit tests** (`tests/`, run in CI) cover sharding, every rejection reason, de-duplication,
   schema validation, the exact `FAULT_INJECT` error body and the probe endpoints.
 - **Subnets** were worked by hand in `network/subnets.md` and cross-checked with Python's `ipaddress`.
-- **Performance claims were measured, not assumed.** The AI's first container image was ~30x slower
-  per token than the same code on the host. Profiling (`torch.profiler`, matmul micro-benchmarks
+- **Performance claims were measured, not assumed.** The AI's first container image needed ~3.9 s per
+  request at 1 CPU (`results/task3/profiling.txt`). Profiling (`torch.profiler`, matmul micro-benchmarks
   across torch 2.5–2.8 and numpy) located the cause in torch's transposed-weight `F.linear` path on
   linux/arm64; the fix (pre-transposed weights) was accepted only after checking that it produces
   identical outputs on 30 validation commands.
@@ -38,7 +38,12 @@ command whose output is saved under `results/`.
 
 - It first bound Ollama to all interfaces so the cluster could reach it; this was blocked and replaced
   by Docker Desktop's `host.docker.internal`, which reaches the laptop's loopback without exposing it.
-- Its first prompt let phi3.5 append "Note: ..." paragraphs (JSON validity 82% on validation); a
-  blank-line stop sequence fixed this (99%).
+- Its first prompt let phi3.5 append "Note: ..." paragraphs (JSON validity 81% on validation, 89% after a
+  prompt revision); a blank-line stop sequence fixed this (99%). See `results/teacher_prompt_iterations/`.
 - The first build failed `pip check` (torch needs `setuptools` on Python 3.12) after switching to a
   fully pinned, `--no-deps` install; the pin was added.
+- Its offline evaluation trusted the kit's `score.py`, which does not check the intent list. Under load,
+  ~1% of requests failed because the student invented `"intent": "alarm_remove"`; the pod logs showed this,
+  and a schema-constrained fallback in the decoder fixed it (re-run results in `results/task4/`).
+- A critic agent found report numbers that were not backed by a saved file (profiling, prompt iterations,
+  NACL stress packets); these were re-run and saved under `results/` rather than kept as unsupported claims.

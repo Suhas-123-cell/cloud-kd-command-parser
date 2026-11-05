@@ -1,0 +1,148 @@
+$ git clone https://github.com/Suhas-123-cell/cloud-kd-command-parser.git
+$ cd cloud-kd-command-parser && make up
+d3cde21 Add README, allowlist the base image's public GPG fingerprint in gitleaks
+[36mINFO[0m[0000] Using config file cluster/k3d.yaml (k3d.io/v1alpha5#simple) 
+[36mINFO[0m[0000] portmapping '127.0.0.1:8080:80' targets the loadbalancer: defaulting to [servers:*:proxy agents:*:proxy] 
+[36mINFO[0m[0000] Prep: Network                                
+[36mINFO[0m[0000] Created network 'k3d-cc-kd'                  
+[36mINFO[0m[0000] Created image volume k3d-cc-kd-images        
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-cc-kd-tools'              
+[36mINFO[0m[0001] Creating node 'k3d-cc-kd-server-0'           
+[36mINFO[0m[0001] Creating LoadBalancer 'k3d-cc-kd-serverlb'   
+[36mINFO[0m[0001] Using the k3d-tools node to gather environment information 
+[36mINFO[0m[0001] Starting new tools node...                   
+[36mINFO[0m[0001] Starting node 'k3d-cc-kd-tools'              
+[36mINFO[0m[0002] Starting cluster 'cc-kd'                     
+[36mINFO[0m[0002] Starting servers...                          
+[36mINFO[0m[0002] Starting node 'k3d-cc-kd-server-0'           
+[36mINFO[0m[0004] All agents already running.                  
+[36mINFO[0m[0004] Starting helpers...                          
+[36mINFO[0m[0004] Starting node 'k3d-cc-kd-serverlb'           
+[36mINFO[0m[0011] Injecting records for hostAliases (incl. host.k3d.internal) and for 3 network members into CoreDNS configmap... 
+[36mINFO[0m[0013] Cluster 'cc-kd' created successfully!        
+[36mINFO[0m[0013] You can now use it like this:                
+kubectl cluster-info
+kubectl config use-context k3d-cc-kd
+Switched to context "k3d-cc-kd".
+kubectl apply -f k8s/data/seaweedfs.yaml
+namespace/data created
+persistentvolumeclaim/seaweedfs-data created
+deployment.apps/seaweedfs created
+service/seaweedfs created
+service/seaweedfs-external created
+./scripts/secrets.sh
+secret/seaweedfs-s3-config created
+secret/s3-credentials created
+secret/s3-credentials created
+kubectl -n data rollout status deploy/seaweedfs --timeout=300s
+Waiting for deployment "seaweedfs" rollout to finish: 0 of 1 updated replicas are available...
+deployment "seaweedfs" successfully rolled out
+.venv/bin/python scripts/s3.py mb datasets models
+bucket datasets ok
+bucket models ok
+.venv/bin/python scripts/s3.py put data/commands_pool.jsonl s3://datasets/commands_pool.jsonl
+uploaded data/commands_pool.jsonl -> s3://datasets/commands_pool.jsonl
+.venv/bin/python scripts/s3.py putdir datasets/teacher s3://datasets/teacher/
+uploaded datasets/teacher/shard-0.jsonl -> s3://datasets/teacher/shard-0.jsonl
+uploaded datasets/teacher/shard-1.jsonl -> s3://datasets/teacher/shard-1.jsonl
+.venv/bin/python scripts/s3.py putdir datasets/v1 s3://datasets/v1/
+uploaded datasets/v1/train.jsonl -> s3://datasets/v1/train.jsonl
+uploaded datasets/v1/train.sha256 -> s3://datasets/v1/train.sha256
+./scripts/seed_models.sh Suhas-123-cell/cloud-kd-command-parser models
+model-v1.tar.gz sha256 OK (d0800d7167e527835836f42878196e76f56143add21b4011485957728e76f15d)
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v1/config.json -> s3://models/v1/config.json
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v1/generation_config.json -> s3://models/v1/generation_config.json
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v1/model.safetensors -> s3://models/v1/model.safetensors
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v1/special_tokens_map.json -> s3://models/v1/special_tokens_map.json
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v1/tokenizer.json -> s3://models/v1/tokenizer.json
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v1/tokenizer_config.json -> s3://models/v1/tokenizer_config.json
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v1/version.json -> s3://models/v1/version.json
+uploaded models/v1/model.sha256 -> s3://models/v1/model.sha256
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v1.tar.gz -> s3://models/v1/model-v1.tar.gz
+model-v2.tar.gz sha256 OK (4b1a59111ea4594b470377b6cf69e504dbe5be44639dd75b6b94b3533a6b8ed8)
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v2/config.json -> s3://models/v2/config.json
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v2/generation_config.json -> s3://models/v2/generation_config.json
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v2/model.safetensors -> s3://models/v2/model.safetensors
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v2/special_tokens_map.json -> s3://models/v2/special_tokens_map.json
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v2/tokenizer.json -> s3://models/v2/tokenizer.json
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v2/tokenizer_config.json -> s3://models/v2/tokenizer_config.json
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v2/version.json -> s3://models/v2/version.json
+uploaded models/v2/model.sha256 -> s3://models/v2/model.sha256
+uploaded /var/folders/pm/w2l_z_3x4kz8f8jwm1rl3gr00000gn/T/tmp.php1qnuoJL/model-v2.tar.gz -> s3://models/v2/model-v2.tar.gz
+docker build -t cc-kd/parser:1.0 service/
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 961B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12.8-slim-bookworm
+#2 DONE 2.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/python:3.12.8-slim-bookworm@sha256:2199a62885a12290dc9c5be3ca0681d367576ab7bf037da120e564723292a2f0
+#5 resolve docker.io/library/python:3.12.8-slim-bookworm@sha256:2199a62885a12290dc9c5be3ca0681d367576ab7bf037da120e564723292a2f0
+#5 resolve docker.io/library/python:3.12.8-slim-bookworm@sha256:2199a62885a12290dc9c5be3ca0681d367576ab7bf037da120e564723292a2f0 1.5s done
+#5 DONE 1.5s
+
+#4 [internal] load build context
+#4 transferring context: 14.21kB done
+#4 DONE 0.0s
+
+#6 [2/6] WORKDIR /app
+#6 CACHED
+
+#7 [3/6] COPY requirements.txt .
+#7 CACHED
+
+#8 [4/6] RUN pip install --no-deps --index-url https://download.pytorch.org/whl/cpu torch==2.5.1  && pip install -r requirements.txt  && pip check
+#8 CACHED
+
+#9 [5/6] COPY schema.json inference.py app.py ./
+#9 CACHED
+
+#10 [6/6] RUN useradd --uid 1000 --create-home app
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 exporting manifest sha256:3bd057de9c9596b9c03c87ceb87c5b9e67ebbbaad637d5d7b278cf6f9b754e9a done
+#11 exporting config sha256:227ef41c2960cf79a2948ed0186ccf4d8fe1e53ad525a4ffc68005c9a9315ac7 done
+#11 exporting attestation manifest sha256:c1b225c0c98f81521c8aa800f0c1896758bfc87bb39e6cee383d605fed4f4169 done
+#11 exporting manifest list sha256:890a3f10d44a3e8373642b11b9b76fddbb748928ea4b227d916881ff3033efa0 done
+#11 naming to docker.io/cc-kd/parser:1.0 done
+#11 unpacking to docker.io/cc-kd/parser:1.0 done
+#11 DONE 0.0s
+k3d image import -c cc-kd cc-kd/parser:1.0
+[36mINFO[0m[0000] Importing image(s) into cluster 'cc-kd'      
+[36mINFO[0m[0000] Saving 1 image(s) from runtime...            
+[36mINFO[0m[0002] Importing images into nodes...               
+[36mINFO[0m[0002] Importing images from tarball '/k3d/images/k3d-cc-kd-images-20261106020624.tar' into node 'k3d-cc-kd-server-0'... 
+[36mINFO[0m[0007] Removing the tarball(s) from image volume... 
+[36mINFO[0m[0008] Removing k3d-tools node...                   
+[36mINFO[0m[0008] Successfully imported image(s)               
+[36mINFO[0m[0008] Successfully imported 1 image(s) into 1 cluster(s) 
+kubectl apply -f k8s/app/parser.yaml
+namespace/app configured
+deployment.apps/parser created
+service/parser created
+ingress.networking.k8s.io/parser created
+horizontalpodautoscaler.autoscaling/parser created
+kubectl -n app rollout status deploy/parser --timeout=600s
+Waiting for deployment "parser" rollout to finish: 0 of 2 updated replicas are available...
+Waiting for deployment "parser" rollout to finish: 1 of 2 updated replicas are available...
+deployment "parser" successfully rolled out
+waiting for the Ingress route (Traefik may still be syncing) ...
+/parse answers through the Ingress
+Ready: curl -s -XPOST http://localhost:8080/parse -H 'Content-Type: application/json' -d '{"text":"set an alarm for seven am"}'
+real 199.89
+user 9.88
+sys 3.65
+make up exit code: 0

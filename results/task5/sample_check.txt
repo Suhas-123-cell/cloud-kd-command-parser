@@ -1,0 +1,8 @@
+ S01  inbound  tcp port 443   192.0.2.55      -> ALLOW (rule 110)  OK
+ S02  inbound  tcp port 22    192.0.2.55      -> DENY  (no match (default deny))  OK
+ S03  outbound tcp port 8000  10.20.1.1       -> ALLOW (rule 100)  OK
+ S04  inbound  tcp port 443   198.51.100.9    -> DENY  (rule 90)  OK
+ S05  outbound tcp port 60000 192.0.2.55      -> ALLOW (rule 110)  OK
+ S06  inbound  tcp port 5432  10.20.5.20      -> DENY  (no match (default deny))  OK
+
+Correct: 6 / 6 = 100.0%
