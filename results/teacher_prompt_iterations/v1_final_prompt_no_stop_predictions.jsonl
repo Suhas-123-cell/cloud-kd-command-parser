@@ -1,0 +1,100 @@
+{"id": "V001", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"upcoming\", \"time\": null, \"place\": null}\n"}
+{"id": "V002", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"sunday\", \"time\": \"five in the morning\", \"place\": null}\n"}
+{"id": "V003", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": \"right now\", \"place\": \"washington\"}\n"}
+{"id": "V004", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"monday\", \"time\": null, \"place\": null}"}
+{"id": "V005", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"tuesday\", \"time\": \"six pm\", \"place\": null}\n"}
+{"id": "V006", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"this afternoon\", \"time\": null, \"place\": null}\n"}
+{"id": "V007", "prediction": "{\"intent\": \"datetime_query\", \"date\": \"november fourteenth\", \"time\": null, \"place\": null}"}
+{"id": "V008", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"this weekend\", \"time\": null, \"place\": null}\n"}
+{"id": "V009", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": \"central time zone\"}"}
+{"id": "V010", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"dale's birthday\", \"time\": null, \"place\": null}\n"}
+{"id": "V011", "prediction": "{\"intent\": \"weather_query\", \"date\": \"this week\", \"time\": null, \"place\": null}\n"}
+{"id": "V012", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": \"pst\"}"}
+{"id": "V013", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}\n"}
+{"id": "V014", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"this afternoon\", \"time\": null, \"place\": null}\n"}
+{"id": "V015", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"today\", \"time\": null, \"place\": null}\n"}
+{"id": "V016", "prediction": "{\"intent\": \"calendar_set\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V017", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"this time\", \"time\": null, \"place\": null}\n"}
+{"id": "V018", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"tomorrow\", \"time\": \"an hour before it starts\", \"place\": null}\n"}
+{"id": "V019", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V020", "prediction": "{\"intent\": \"weather_query\", \"date\": null, \"time\": null, \"place\": \"our city\"}\n"}
+{"id": "V021", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V022", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}\n"}
+{"id": "V023", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"every june third\", \"time\": null, \"place\": null}\n"}
+{"id": "V024", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"Justin's school play\", \"time\": null, \"place\": null}\n\n(Note: The \"date\" in the example is a bit ambiguous because it refers to an event rather than a specific day. However, following the instructions, I've included the exact phrase from the command. In a real-world application, additional context would be needed to accurately determine the date of the event"}
+{"id": "V025", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": \"new york\"}"}
+{"id": "V026", "prediction": "{\"intent\": \"weather_query\", \"date\": \"five days\", \"time\": null, \"place\": \"new york city\"}\n"}
+{"id": "V027", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"today\", \"time\": null, \"place\": null}\n"}
+{"id": "V028", "prediction": "{\"intent\": \"weather_query\", \"date\": null, \"time\": null, \"place\": \"home\"}\n"}
+{"id": "V029", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}\n"}
+{"id": "V030", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \"ten am\", \"place\": null}\n"}
+{"id": "V031", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"today\", \"time\": null, \"place\": null}\n"}
+{"id": "V032", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"this year\", \"time\": null, \"place\": null}\n"}
+{"id": "V033", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"next tuesday\", \"time\": \"eight hundred am\", \"place\": null}"}
+{"id": "V034", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}\n"}
+{"id": "V035", "prediction": "{\"intent\": \"alarm_query\", \"date\": \"today\", \"time\": null, \"place\": null}\n"}
+{"id": "V036", "prediction": "{\"intent\": \"alarm_query\", \"date\": \"today\", \"time\": \"seven am\", \"place\": null}"}
+{"id": "V037", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"tomorrow\", \"time\": \"seven\", \"place\": \"office\"}\n\n"}
+{"id": "V038", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"monday\", \"time\": \"six at\", \"place\": \"mcdonalds\"}\n\nNote: The \"time\" slot has been simplified to \"six at\" as per the slot rules, and the place is directly copied from the command. The date is also copied exactly as it appears in the command."}
+{"id": "V039", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"Wyatt'thy birthday\", \"time\": null, \"place\": null}\n\n(Note: The command \"Wyatt'thy birthday\" is interpreted as \"Wyatt's birthday\" based on the context of removing an event from a calendar, following the slot rules provided.)"}
+{"id": "V040", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"in an hour's time\", \"time\": null, \"place\": null}\n"}
+{"id": "V041", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": \"california\"}\n"}
+{"id": "V042", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": \"beijing\"}"}
+{"id": "V043", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}\n"}
+{"id": "V044", "prediction": "{\"intent\": \"date\", \"date\": \"fifteenth\", \"time\": null, \"place\": null}"}
+{"id": "V045", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"next tuesday\", \"time\": null, \"place\": null}\n"}
+{"id": "V046", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"this friday\", \"time\": null, \"place\": null}"}
+{"id": "V047", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}\n"}
+{"id": "V048", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"today\", \"time\": \"one pm\", \"place\": null}\n"}
+{"id": "V049", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"the first of january\", \"time\": null, \"place\": \"alexa\"}\n\n(Note: The provided example seems to have a slight inconsistency with the instructions, as \"alexa\" is not a place but rather a name. According to the rules, if a name is used as a place, it should be represented as \"null\". However, since the instructions do not explicitly state how"}
+{"id": "V050", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"today\", \"time\": \"one pm\", \"place\": \"joe smith\"}\n\n(Note: The \"place\" in the JSON object is interpreted as the name of the person, Joe Smith, as it is the only place-related information provided in the command. If the intent was to set an event for a location, the command should include a location, not a person'dict object:\n"}
+{"id": "V051", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}\n"}
+{"id": "V052", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"this week\", \"time\": null, \"place\": null}\n"}
+{"id": "V053", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"london\"}\n"}
+{"id": "V054", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"tuesday\", \"time\": \"four pm\", \"place\": null}\n"}
+{"id": "V055", "prediction": "{\"intent\": \"weather_query\", \"date\": \"tomorrow\", \"time\": null, \"place\": \"mumbai\"}\n"}
+{"id": "V056", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}\n"}
+{"id": "V057", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"april second\", \"time\": null, \"place\": null}\n"}
+{"id": "V058", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}\n\nExplanpective reasoning:\nThe command \"tap start and then select settings\" suggests the user is looking for recommendations, possibly related to events or activities to do, hence the \"recommendation_events\" intent. The command does not specify a date, time, or place, so these slots are null."}
+{"id": "V059", "prediction": "{\"intent\": \"date\", \"date\": \"the twenty second march\", \"time\": null, \"place\": null}\n"}
+{"id": "V060", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"near me\"}\n"}
+{"id": "V061", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V062", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"today\", \"time\": null, \"place\": null}\n"}
+{"id": "V063", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"near me\"}\n"}
+{"id": "V064", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"this weekend\", \"time\": null, \"place\": \"iowa\"}\n\n"}
+{"id": "V065", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"quad cities\"}\n\n"}
+{"id": "V066", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": \"this time\", \"place\": null}\n"}
+{"id": "V067", "prediction": "{\"intent\": \"weather_query\", \"date\": \"today\", \"time\": null, \"place\": null}\n"}
+{"id": "V068", "prediction": "{\"intent\": \"alarm_query\", \"date\": \"this week\", \"time\": null, \"place\": null}\n"}
+{"id": "V069", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"my area\"}\n"}
+{"id": "V070", "prediction": "{\"intent\": \"weather_query\", \"date\": \"friday\", \"time\": null, \"place\": null}"}
+{"id": "V071", "prediction": "{\"intent\": \"calendar_set\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V072", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"monday\", \"time\": null, \"place\": null}"}
+{"id": "V073", "prediction": "{\"intent\": \"calendar_remove\", \"date\": null, \"time\": null, \"place\": null}\n"}
+{"id": "V074", "prediction": "{\"intent\": \"datetime_query\", \"date\": \"next saturday\", \"time\": null, \"place\": null}\n"}
+{"id": "V075", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"this weekend\", \"time\": null, \"place\": \"evan parker\"}\n\n(Note: The \"this weekend\" date is inferred from the context of \"weekend events\" and \"evan parker\" is taken as the place since it's the only location mentioned in the command. If \"evan parker\" is not intended as a place, the \"place\""}
+{"id": "V076", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \"ten am\", \"place\": null}\n"}
+{"id": "V077", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"june third\", \"time\": null, \"place\": \"zach brown concert\"}\n\n"}
+{"id": "V078", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"wednesday\", \"time\": \"nine am\", \"place\": \"john\"}\n\n(Note: The \"place\" key is set to \"john\" because in this context, it refers to the person with whom the meeting is set, not a physical location. If the intent was to set an alarm for a location, the \"place\" should be null.)"}
+{"id": "V079", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"new york city\"}\n"}
+{"id": "V080", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}\n"}
+{"id": "V081", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V082", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}\n"}
+{"id": "V083", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"today\", \"time\": null, \"place\": null}"}
+{"id": "V084", "prediction": "{\"intent\": \"alarm_query\", \"date\": \"today\", \"time\": null, \"place\": null}\n"}
+{"id": "V085", "prediction": "{\"intent\": null, \"date\": null, \"time\": null, \"place\": null}\n"}
+{"id": "V086", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"a few hours ahead of time\", \"time\": null, \"place\": null}"}
+{"id": "V087", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"february twelfth\", \"time\": \"nine am\", \"place\": null}\n"}
+{"id": "V088", "prediction": "{\"intent\": \"alarm_query\", \"date\": \"today\", \"time\": null, \"place\": null}\n"}
+{"id": "V089", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \"six thirty pm\", \"place\": null}\n"}
+{"id": "V090", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"next friday\", \"time\": \"at noon\", \"place\": null}\n"}
+{"id": "V091", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": \"paris\"}"}
+{"id": "V092", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"tomorrow\", \"time\": \"two pm\", \"place\": \"francine\"}\n\n(Note: The \"place\" key is set to \"francine\" because the command implies the meeting is with a person named Francine, which can be considered a location in the context of scheduling. If the context strictly requires \"place\" to be a city or location, and not a person's"}
+{"id": "V093", "prediction": "{\"intent\": \"alarm_query\", \"date\": \"today\", \"time\": \"morning\", \"place\": null}"}
+{"id": "V094", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"this week\", \"time\": null, \"place\": null}"}
+{"id": "V095", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"today\", \"time\": \"seven thirty am\", \"place\": null}\n"}
+{"id": "V096", "prediction": "{\"intent\": \"weather_query\", \"date\": \"this week\", \"time\": null, \"place\": null}\n"}
+{"id": "V097", "prediction": "{\"intent\": \"alarm_query\", \"date\": \"today\", \"time\": null, \"place\": null}\n"}
+{"id": "V098", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"next\", \"time\": null, \"place\": null}\n\n(Note: The \"date\" slot is interpreted as \"next\" because it refers to the immediate following event on the calendar, which is a common interpretation in the absence of a specific date. However, if the command had included a specific date, that value should be used instead.)"}
+{"id": "V099", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \"eight hundred\", \"place\": null}\n"}
+{"id": "V100", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"tomorrow\", \"time\": null, \"place\": null}\n"}

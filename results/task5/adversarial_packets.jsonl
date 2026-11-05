@@ -1,0 +1,140 @@
+{"id": "C01", "direction": "inbound", "protocol": "tcp", "port": 80, "address": "203.0.113.7", "expected": "allow", "amb": "clear"}
+{"id": "C02", "direction": "inbound", "protocol": "tcp", "port": 443, "address": "203.0.113.7", "expected": "allow", "amb": "clear"}
+{"id": "C03", "direction": "inbound", "protocol": "tcp", "port": 80, "address": "8.8.8.8", "expected": "allow", "amb": "clear"}
+{"id": "C04", "direction": "inbound", "protocol": "tcp", "port": 443, "address": "8.8.8.8", "expected": "allow", "amb": "clear"}
+{"id": "C05", "direction": "inbound", "protocol": "tcp", "port": 80, "address": "1.1.1.1", "expected": "allow", "amb": "clear"}
+{"id": "C06", "direction": "inbound", "protocol": "tcp", "port": 443, "address": "1.1.1.1", "expected": "allow", "amb": "clear"}
+{"id": "C07", "direction": "inbound", "protocol": "tcp", "port": 80, "address": "10.20.4.50", "expected": "allow", "amb": "clear"}
+{"id": "C08", "direction": "inbound", "protocol": "tcp", "port": 443, "address": "10.20.5.130", "expected": "allow", "amb": "clear"}
+{"id": "C09", "direction": "inbound", "protocol": "tcp", "port": 80, "address": "10.20.0.0", "expected": "allow", "amb": "clear: anywhere"}
+{"id": "C10", "direction": "inbound", "protocol": "tcp", "port": 80, "address": "198.51.100.0", "expected": "deny", "amb": "clear"}
+{"id": "C11", "direction": "inbound", "protocol": "tcp", "port": 443, "address": "198.51.100.0", "expected": "deny", "amb": "clear"}
+{"id": "C12", "direction": "inbound", "protocol": "tcp", "port": 80, "address": "198.51.100.1", "expected": "deny", "amb": "clear"}
+{"id": "C13", "direction": "inbound", "protocol": "tcp", "port": 443, "address": "198.51.100.1", "expected": "deny", "amb": "clear"}
+{"id": "C14", "direction": "inbound", "protocol": "tcp", "port": 80, "address": "198.51.100.255", "expected": "deny", "amb": "clear"}
+{"id": "C15", "direction": "inbound", "protocol": "tcp", "port": 443, "address": "198.51.100.255", "expected": "deny", "amb": "clear"}
+{"id": "C16", "direction": "inbound", "protocol": "tcp", "port": 80, "address": "198.51.100.128", "expected": "deny", "amb": "clear"}
+{"id": "C17", "direction": "inbound", "protocol": "tcp", "port": 443, "address": "198.51.100.128", "expected": "deny", "amb": "clear"}
+{"id": "C18", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "198.51.100.77", "expected": "deny", "amb": "clear"}
+{"id": "C19", "direction": "inbound", "protocol": "tcp", "port": 1024, "address": "198.51.100.77", "expected": "deny", "amb": "clear"}
+{"id": "C20", "direction": "inbound", "protocol": "tcp", "port": 8000, "address": "198.51.100.77", "expected": "deny", "amb": "clear"}
+{"id": "C21", "direction": "inbound", "protocol": "tcp", "port": 65535, "address": "198.51.100.77", "expected": "deny", "amb": "clear"}
+{"id": "C22", "direction": "inbound", "protocol": "tcp", "port": 5000, "address": "198.51.100.77", "expected": "deny", "amb": "clear"}
+{"id": "C23", "direction": "inbound", "protocol": "tcp", "port": 0, "address": "198.51.100.77", "expected": "deny", "amb": "clear"}
+{"id": "C24", "direction": "inbound", "protocol": "tcp", "port": 1023, "address": "198.51.100.77", "expected": "deny", "amb": "clear"}
+{"id": "C25", "direction": "inbound", "protocol": "udp", "port": 443, "address": "198.51.100.9", "expected": "deny", "amb": "clear"}
+{"id": "C26", "direction": "inbound", "protocol": "udp", "port": 53, "address": "198.51.100.9", "expected": "deny", "amb": "clear"}
+{"id": "C27", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "198.51.100.200", "expected": "deny", "amb": "clear"}
+{"id": "C28", "direction": "inbound", "protocol": "tcp", "port": 80, "address": "198.51.99.255", "expected": "allow", "amb": "edge outside range"}
+{"id": "C29", "direction": "inbound", "protocol": "tcp", "port": 443, "address": "198.51.101.0", "expected": "allow", "amb": "edge outside range"}
+{"id": "C30", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "198.51.99.255", "expected": "deny", "amb": "clear"}
+{"id": "C31", "direction": "inbound", "protocol": "tcp", "port": 50000, "address": "198.51.101.0", "expected": "deny", "amb": "clear"}
+{"id": "C32", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.5.128", "expected": "allow", "amb": "clear"}
+{"id": "C33", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.5.129", "expected": "allow", "amb": "clear"}
+{"id": "C34", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.5.140", "expected": "allow", "amb": "clear"}
+{"id": "C35", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.5.158", "expected": "allow", "amb": "clear"}
+{"id": "C36", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.5.159", "expected": "allow", "amb": "clear"}
+{"id": "C37", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.5.160", "expected": "deny", "amb": "clear"}
+{"id": "C38", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.5.127", "expected": "deny", "amb": "clear"}
+{"id": "C39", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.5.0", "expected": "deny", "amb": "clear"}
+{"id": "C40", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.5.1", "expected": "deny", "amb": "clear"}
+{"id": "C41", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.0.10", "expected": "deny", "amb": "clear"}
+{"id": "C42", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.4.10", "expected": "deny", "amb": "clear"}
+{"id": "C43", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C44", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.3.255", "expected": "deny", "amb": "clear"}
+{"id": "C45", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.4.0", "expected": "deny", "amb": "clear"}
+{"id": "C46", "direction": "inbound", "protocol": "udp", "port": 22, "address": "10.20.5.130", "expected": "deny", "amb": "udp not in spec: 'TCP 22'"}
+{"id": "C47", "direction": "inbound", "protocol": "tcp", "port": 23, "address": "10.20.5.130", "expected": "deny", "amb": "clear"}
+{"id": "C48", "direction": "inbound", "protocol": "tcp", "port": 3389, "address": "10.20.5.130", "expected": "deny", "amb": "clear"}
+{"id": "C49", "direction": "inbound", "protocol": "tcp", "port": 2222, "address": "10.20.5.130", "expected": "deny", "amb": "debatable: 2222 is in 1024-65535 but source is mgmt not app; actually deny"}
+{"id": "C50", "direction": "inbound", "protocol": "tcp", "port": 1024, "address": "10.20.0.0", "expected": "allow", "amb": "clear"}
+{"id": "C51", "direction": "inbound", "protocol": "tcp", "port": 65535, "address": "10.20.0.0", "expected": "allow", "amb": "clear"}
+{"id": "C52", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "10.20.0.0", "expected": "allow", "amb": "clear"}
+{"id": "C53", "direction": "inbound", "protocol": "tcp", "port": 1024, "address": "10.20.0.1", "expected": "allow", "amb": "clear"}
+{"id": "C54", "direction": "inbound", "protocol": "tcp", "port": 65535, "address": "10.20.0.1", "expected": "allow", "amb": "clear"}
+{"id": "C55", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "10.20.0.1", "expected": "allow", "amb": "clear"}
+{"id": "C56", "direction": "inbound", "protocol": "tcp", "port": 1024, "address": "10.20.2.2", "expected": "allow", "amb": "clear"}
+{"id": "C57", "direction": "inbound", "protocol": "tcp", "port": 65535, "address": "10.20.2.2", "expected": "allow", "amb": "clear"}
+{"id": "C58", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "10.20.2.2", "expected": "allow", "amb": "clear"}
+{"id": "C59", "direction": "inbound", "protocol": "tcp", "port": 1024, "address": "10.20.3.254", "expected": "allow", "amb": "clear"}
+{"id": "C60", "direction": "inbound", "protocol": "tcp", "port": 65535, "address": "10.20.3.254", "expected": "allow", "amb": "clear"}
+{"id": "C61", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "10.20.3.254", "expected": "allow", "amb": "clear"}
+{"id": "C62", "direction": "inbound", "protocol": "tcp", "port": 1024, "address": "10.20.3.255", "expected": "allow", "amb": "clear"}
+{"id": "C63", "direction": "inbound", "protocol": "tcp", "port": 65535, "address": "10.20.3.255", "expected": "allow", "amb": "clear"}
+{"id": "C64", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "10.20.3.255", "expected": "allow", "amb": "clear"}
+{"id": "C65", "direction": "inbound", "protocol": "tcp", "port": 1023, "address": "10.20.0.5", "expected": "deny", "amb": "clear"}
+{"id": "C66", "direction": "inbound", "protocol": "tcp", "port": 80, "address": "10.20.0.5", "expected": "allow", "amb": "80 allowed from anywhere"}
+{"id": "C67", "direction": "inbound", "protocol": "tcp", "port": 22, "address": "10.20.0.5", "expected": "deny", "amb": "clear"}
+{"id": "C68", "direction": "inbound", "protocol": "tcp", "port": 1, "address": "10.20.0.5", "expected": "deny", "amb": "clear"}
+{"id": "C69", "direction": "inbound", "protocol": "tcp", "port": 0, "address": "10.20.0.5", "expected": "deny", "amb": "clear"}
+{"id": "C70", "direction": "inbound", "protocol": "tcp", "port": 8000, "address": "10.20.1.1", "expected": "allow", "amb": "8000 in ephemeral range"}
+{"id": "C71", "direction": "inbound", "protocol": "udp", "port": 40000, "address": "10.20.0.5", "expected": "deny", "amb": "debatable: spec doesn't say protocol of replies; TCP assumed"}
+{"id": "C72", "direction": "inbound", "protocol": "udp", "port": 1024, "address": "10.20.3.255", "expected": "deny", "amb": "debatable: same"}
+{"id": "C73", "direction": "inbound", "protocol": "udp", "port": 80, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C74", "direction": "inbound", "protocol": "udp", "port": 443, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C75", "direction": "inbound", "protocol": "tcp", "port": 1024, "address": "10.20.4.0", "expected": "deny", "amb": "public itself, not app"}
+{"id": "C76", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "10.20.4.1", "expected": "deny", "amb": "clear"}
+{"id": "C77", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C78", "direction": "inbound", "protocol": "tcp", "port": 1024, "address": "8.8.8.8", "expected": "deny", "amb": "clear"}
+{"id": "C79", "direction": "inbound", "protocol": "tcp", "port": 65535, "address": "1.2.3.4", "expected": "deny", "amb": "clear"}
+{"id": "C80", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "10.20.5.1", "expected": "deny", "amb": "clear"}
+{"id": "C81", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "10.20.5.126", "expected": "deny", "amb": "clear"}
+{"id": "C82", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "10.20.5.127", "expected": "deny", "amb": "clear"}
+{"id": "C83", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "10.20.5.130", "expected": "deny", "amb": "clear"}
+{"id": "C84", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "10.20.5.159", "expected": "deny", "amb": "clear"}
+{"id": "C85", "direction": "inbound", "protocol": "tcp", "port": 1024, "address": "10.20.5.128", "expected": "deny", "amb": "clear"}
+{"id": "C86", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "10.19.255.255", "expected": "deny", "amb": "clear"}
+{"id": "C87", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "10.21.0.0", "expected": "deny", "amb": "clear"}
+{"id": "C88", "direction": "inbound", "protocol": "tcp", "port": 40000, "address": "198.51.100.5", "expected": "deny", "amb": "clear"}
+{"id": "C89", "direction": "inbound", "protocol": "tcp", "port": 65535, "address": "10.20.4.255", "expected": "deny", "amb": "clear"}
+{"id": "C91", "direction": "outbound", "protocol": "tcp", "port": 8000, "address": "10.20.0.0", "expected": "allow", "amb": "clear"}
+{"id": "C92", "direction": "outbound", "protocol": "tcp", "port": 8000, "address": "10.20.0.1", "expected": "allow", "amb": "clear"}
+{"id": "C93", "direction": "outbound", "protocol": "tcp", "port": 8000, "address": "10.20.1.1", "expected": "allow", "amb": "clear"}
+{"id": "C94", "direction": "outbound", "protocol": "tcp", "port": 8000, "address": "10.20.3.254", "expected": "allow", "amb": "clear"}
+{"id": "C95", "direction": "outbound", "protocol": "tcp", "port": 8000, "address": "10.20.3.255", "expected": "allow", "amb": "clear"}
+{"id": "C96", "direction": "outbound", "protocol": "udp", "port": 8000, "address": "10.20.0.5", "expected": "deny", "amb": "clear"}
+{"id": "C97", "direction": "outbound", "protocol": "tcp", "port": 8000, "address": "10.20.4.0", "expected": "allow", "amb": "DEBATABLE: spec says only app; but 8000 in ephemeral range for reply rule -> literal reference NACL allows"}
+{"id": "C98", "direction": "outbound", "protocol": "tcp", "port": 8000, "address": "10.20.5.1", "expected": "allow", "amb": "DEBATABLE same"}
+{"id": "C99", "direction": "outbound", "protocol": "tcp", "port": 8000, "address": "203.0.113.7", "expected": "allow", "amb": "DEBATABLE same: reply to client whose ephemeral port is 8000"}
+{"id": "C100", "direction": "outbound", "protocol": "tcp", "port": 8000, "address": "198.51.100.5", "expected": "allow", "amb": "DEBATABLE same"}
+{"id": "C101", "direction": "outbound", "protocol": "tcp", "port": 1024, "address": "203.0.113.7", "expected": "allow", "amb": "clear"}
+{"id": "C102", "direction": "outbound", "protocol": "tcp", "port": 65535, "address": "203.0.113.7", "expected": "allow", "amb": "clear"}
+{"id": "C103", "direction": "outbound", "protocol": "tcp", "port": 51000, "address": "203.0.113.7", "expected": "allow", "amb": "clear"}
+{"id": "C104", "direction": "outbound", "protocol": "tcp", "port": 1024, "address": "8.8.8.8", "expected": "allow", "amb": "clear"}
+{"id": "C105", "direction": "outbound", "protocol": "tcp", "port": 65535, "address": "8.8.8.8", "expected": "allow", "amb": "clear"}
+{"id": "C106", "direction": "outbound", "protocol": "tcp", "port": 51000, "address": "8.8.8.8", "expected": "allow", "amb": "clear"}
+{"id": "C107", "direction": "outbound", "protocol": "tcp", "port": 1024, "address": "255.255.255.255", "expected": "allow", "amb": "clear"}
+{"id": "C108", "direction": "outbound", "protocol": "tcp", "port": 65535, "address": "255.255.255.255", "expected": "allow", "amb": "clear"}
+{"id": "C109", "direction": "outbound", "protocol": "tcp", "port": 51000, "address": "255.255.255.255", "expected": "allow", "amb": "clear"}
+{"id": "C110", "direction": "outbound", "protocol": "tcp", "port": 1024, "address": "1.0.0.1", "expected": "allow", "amb": "clear"}
+{"id": "C111", "direction": "outbound", "protocol": "tcp", "port": 65535, "address": "1.0.0.1", "expected": "allow", "amb": "clear"}
+{"id": "C112", "direction": "outbound", "protocol": "tcp", "port": 51000, "address": "1.0.0.1", "expected": "allow", "amb": "clear"}
+{"id": "C113", "direction": "outbound", "protocol": "tcp", "port": 1023, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C114", "direction": "outbound", "protocol": "tcp", "port": 1023, "address": "10.20.0.5", "expected": "deny", "amb": "clear"}
+{"id": "C115", "direction": "outbound", "protocol": "tcp", "port": 51000, "address": "198.51.100.0", "expected": "allow", "amb": "DEBATABLE: 'replies going back to clients anywhere'; only inbound is blocked per spec"}
+{"id": "C116", "direction": "outbound", "protocol": "tcp", "port": 51000, "address": "198.51.100.5", "expected": "allow", "amb": "DEBATABLE: 'replies going back to clients anywhere'; only inbound is blocked per spec"}
+{"id": "C117", "direction": "outbound", "protocol": "tcp", "port": 51000, "address": "198.51.100.255", "expected": "allow", "amb": "DEBATABLE: 'replies going back to clients anywhere'; only inbound is blocked per spec"}
+{"id": "C118", "direction": "outbound", "protocol": "tcp", "port": 51000, "address": "10.20.5.130", "expected": "allow", "amb": "'anywhere'"}
+{"id": "C119", "direction": "outbound", "protocol": "tcp", "port": 51000, "address": "10.20.0.5", "expected": "allow", "amb": "'anywhere'"}
+{"id": "C120", "direction": "outbound", "protocol": "tcp", "port": 51000, "address": "10.20.4.9", "expected": "allow", "amb": "'anywhere'"}
+{"id": "C121", "direction": "outbound", "protocol": "udp", "port": 51000, "address": "203.0.113.7", "expected": "deny", "amb": "debatable: protocol unspecified; TCP assumed"}
+{"id": "C122", "direction": "outbound", "protocol": "udp", "port": 1024, "address": "8.8.8.8", "expected": "deny", "amb": "debatable"}
+{"id": "C123", "direction": "outbound", "protocol": "tcp", "port": 80, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C124", "direction": "outbound", "protocol": "tcp", "port": 443, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C125", "direction": "outbound", "protocol": "tcp", "port": 22, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C126", "direction": "outbound", "protocol": "tcp", "port": 53, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C127", "direction": "outbound", "protocol": "tcp", "port": 1023, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C128", "direction": "outbound", "protocol": "tcp", "port": 1, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C129", "direction": "outbound", "protocol": "tcp", "port": 0, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C130", "direction": "outbound", "protocol": "tcp", "port": 3306, "address": "203.0.113.7", "expected": "allow", "amb": "clear", "note": "reviewer first expected deny; 3306 is inside the client ephemeral range 1024-65535, so outbound replies may use it"}
+{"id": "C131", "direction": "outbound", "protocol": "tcp", "port": 25, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C132", "direction": "outbound", "protocol": "tcp", "port": 80, "address": "10.20.0.5", "expected": "deny", "amb": "clear"}
+{"id": "C133", "direction": "outbound", "protocol": "tcp", "port": 443, "address": "10.20.0.5", "expected": "deny", "amb": "clear"}
+{"id": "C134", "direction": "outbound", "protocol": "tcp", "port": 22, "address": "10.20.5.130", "expected": "deny", "amb": "clear"}
+{"id": "C135", "direction": "outbound", "protocol": "tcp", "port": 22, "address": "10.20.5.129", "expected": "deny", "amb": "clear"}
+{"id": "C136", "direction": "outbound", "protocol": "udp", "port": 53, "address": "8.8.8.8", "expected": "deny", "amb": "clear"}
+{"id": "C137", "direction": "outbound", "protocol": "udp", "port": 443, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C138", "direction": "outbound", "protocol": "udp", "port": 80, "address": "203.0.113.7", "expected": "deny", "amb": "clear"}
+{"id": "C139", "direction": "outbound", "protocol": "tcp", "port": 80, "address": "198.51.100.5", "expected": "deny", "amb": "clear"}
+{"id": "C140", "direction": "outbound", "protocol": "tcp", "port": 1023, "address": "10.20.3.255", "expected": "deny", "amb": "clear"}
+{"id": "C141", "direction": "outbound", "protocol": "tcp", "port": 1023, "address": "10.20.4.0", "expected": "deny", "amb": "clear"}

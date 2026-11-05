@@ -1,0 +1,142 @@
+ C01  inbound  tcp port 80    203.0.113.7     -> ALLOW (rule 100)  OK
+ C02  inbound  tcp port 443   203.0.113.7     -> ALLOW (rule 110)  OK
+ C03  inbound  tcp port 80    8.8.8.8         -> ALLOW (rule 100)  OK
+ C04  inbound  tcp port 443   8.8.8.8         -> ALLOW (rule 110)  OK
+ C05  inbound  tcp port 80    1.1.1.1         -> ALLOW (rule 100)  OK
+ C06  inbound  tcp port 443   1.1.1.1         -> ALLOW (rule 110)  OK
+ C07  inbound  tcp port 80    10.20.4.50      -> ALLOW (rule 100)  OK
+ C08  inbound  tcp port 443   10.20.5.130     -> ALLOW (rule 110)  OK
+ C09  inbound  tcp port 80    10.20.0.0       -> ALLOW (rule 100)  OK
+ C10  inbound  tcp port 80    198.51.100.0    -> DENY  (rule 90)  OK
+ C11  inbound  tcp port 443   198.51.100.0    -> DENY  (rule 90)  OK
+ C12  inbound  tcp port 80    198.51.100.1    -> DENY  (rule 90)  OK
+ C13  inbound  tcp port 443   198.51.100.1    -> DENY  (rule 90)  OK
+ C14  inbound  tcp port 80    198.51.100.255  -> DENY  (rule 90)  OK
+ C15  inbound  tcp port 443   198.51.100.255  -> DENY  (rule 90)  OK
+ C16  inbound  tcp port 80    198.51.100.128  -> DENY  (rule 90)  OK
+ C17  inbound  tcp port 443   198.51.100.128  -> DENY  (rule 90)  OK
+ C18  inbound  tcp port 22    198.51.100.77   -> DENY  (rule 90)  OK
+ C19  inbound  tcp port 1024  198.51.100.77   -> DENY  (rule 90)  OK
+ C20  inbound  tcp port 8000  198.51.100.77   -> DENY  (rule 90)  OK
+ C21  inbound  tcp port 65535 198.51.100.77   -> DENY  (rule 90)  OK
+ C22  inbound  tcp port 5000  198.51.100.77   -> DENY  (rule 90)  OK
+ C23  inbound  tcp port 0     198.51.100.77   -> DENY  (rule 90)  OK
+ C24  inbound  tcp port 1023  198.51.100.77   -> DENY  (rule 90)  OK
+ C25  inbound  udp port 443   198.51.100.9    -> DENY  (rule 90)  OK
+ C26  inbound  udp port 53    198.51.100.9    -> DENY  (rule 90)  OK
+ C27  inbound  tcp port 22    198.51.100.200  -> DENY  (rule 90)  OK
+ C28  inbound  tcp port 80    198.51.99.255   -> ALLOW (rule 100)  OK
+ C29  inbound  tcp port 443   198.51.101.0    -> ALLOW (rule 110)  OK
+ C30  inbound  tcp port 22    198.51.99.255   -> DENY  (no match (default deny))  OK
+ C31  inbound  tcp port 50000 198.51.101.0    -> DENY  (no match (default deny))  OK
+ C32  inbound  tcp port 22    10.20.5.128     -> ALLOW (rule 120)  OK
+ C33  inbound  tcp port 22    10.20.5.129     -> ALLOW (rule 120)  OK
+ C34  inbound  tcp port 22    10.20.5.140     -> ALLOW (rule 120)  OK
+ C35  inbound  tcp port 22    10.20.5.158     -> ALLOW (rule 120)  OK
+ C36  inbound  tcp port 22    10.20.5.159     -> ALLOW (rule 120)  OK
+ C37  inbound  tcp port 22    10.20.5.160     -> DENY  (no match (default deny))  OK
+ C38  inbound  tcp port 22    10.20.5.127     -> DENY  (no match (default deny))  OK
+ C39  inbound  tcp port 22    10.20.5.0       -> DENY  (no match (default deny))  OK
+ C40  inbound  tcp port 22    10.20.5.1       -> DENY  (no match (default deny))  OK
+ C41  inbound  tcp port 22    10.20.0.10      -> DENY  (no match (default deny))  OK
+ C42  inbound  tcp port 22    10.20.4.10      -> DENY  (no match (default deny))  OK
+ C43  inbound  tcp port 22    203.0.113.7     -> DENY  (no match (default deny))  OK
+ C44  inbound  tcp port 22    10.20.3.255     -> DENY  (no match (default deny))  OK
+ C45  inbound  tcp port 22    10.20.4.0       -> DENY  (no match (default deny))  OK
+ C46  inbound  udp port 22    10.20.5.130     -> DENY  (no match (default deny))  OK
+ C47  inbound  tcp port 23    10.20.5.130     -> DENY  (no match (default deny))  OK
+ C48  inbound  tcp port 3389  10.20.5.130     -> DENY  (no match (default deny))  OK
+ C49  inbound  tcp port 2222  10.20.5.130     -> DENY  (no match (default deny))  OK
+ C50  inbound  tcp port 1024  10.20.0.0       -> ALLOW (rule 130)  OK
+ C51  inbound  tcp port 65535 10.20.0.0       -> ALLOW (rule 130)  OK
+ C52  inbound  tcp port 40000 10.20.0.0       -> ALLOW (rule 130)  OK
+ C53  inbound  tcp port 1024  10.20.0.1       -> ALLOW (rule 130)  OK
+ C54  inbound  tcp port 65535 10.20.0.1       -> ALLOW (rule 130)  OK
+ C55  inbound  tcp port 40000 10.20.0.1       -> ALLOW (rule 130)  OK
+ C56  inbound  tcp port 1024  10.20.2.2       -> ALLOW (rule 130)  OK
+ C57  inbound  tcp port 65535 10.20.2.2       -> ALLOW (rule 130)  OK
+ C58  inbound  tcp port 40000 10.20.2.2       -> ALLOW (rule 130)  OK
+ C59  inbound  tcp port 1024  10.20.3.254     -> ALLOW (rule 130)  OK
+ C60  inbound  tcp port 65535 10.20.3.254     -> ALLOW (rule 130)  OK
+ C61  inbound  tcp port 40000 10.20.3.254     -> ALLOW (rule 130)  OK
+ C62  inbound  tcp port 1024  10.20.3.255     -> ALLOW (rule 130)  OK
+ C63  inbound  tcp port 65535 10.20.3.255     -> ALLOW (rule 130)  OK
+ C64  inbound  tcp port 40000 10.20.3.255     -> ALLOW (rule 130)  OK
+ C65  inbound  tcp port 1023  10.20.0.5       -> DENY  (no match (default deny))  OK
+ C66  inbound  tcp port 80    10.20.0.5       -> ALLOW (rule 100)  OK
+ C67  inbound  tcp port 22    10.20.0.5       -> DENY  (no match (default deny))  OK
+ C68  inbound  tcp port 1     10.20.0.5       -> DENY  (no match (default deny))  OK
+ C69  inbound  tcp port 0     10.20.0.5       -> DENY  (no match (default deny))  OK
+ C70  inbound  tcp port 8000  10.20.1.1       -> ALLOW (rule 130)  OK
+ C71  inbound  udp port 40000 10.20.0.5       -> DENY  (no match (default deny))  OK
+ C72  inbound  udp port 1024  10.20.3.255     -> DENY  (no match (default deny))  OK
+ C73  inbound  udp port 80    203.0.113.7     -> DENY  (no match (default deny))  OK
+ C74  inbound  udp port 443   203.0.113.7     -> DENY  (no match (default deny))  OK
+ C75  inbound  tcp port 1024  10.20.4.0       -> DENY  (no match (default deny))  OK
+ C76  inbound  tcp port 40000 10.20.4.1       -> DENY  (no match (default deny))  OK
+ C77  inbound  tcp port 40000 203.0.113.7     -> DENY  (no match (default deny))  OK
+ C78  inbound  tcp port 1024  8.8.8.8         -> DENY  (no match (default deny))  OK
+ C79  inbound  tcp port 65535 1.2.3.4         -> DENY  (no match (default deny))  OK
+ C80  inbound  tcp port 40000 10.20.5.1       -> DENY  (no match (default deny))  OK
+ C81  inbound  tcp port 40000 10.20.5.126     -> DENY  (no match (default deny))  OK
+ C82  inbound  tcp port 40000 10.20.5.127     -> DENY  (no match (default deny))  OK
+ C83  inbound  tcp port 40000 10.20.5.130     -> DENY  (no match (default deny))  OK
+ C84  inbound  tcp port 40000 10.20.5.159     -> DENY  (no match (default deny))  OK
+ C85  inbound  tcp port 1024  10.20.5.128     -> DENY  (no match (default deny))  OK
+ C86  inbound  tcp port 40000 10.19.255.255   -> DENY  (no match (default deny))  OK
+ C87  inbound  tcp port 40000 10.21.0.0       -> DENY  (no match (default deny))  OK
+ C88  inbound  tcp port 40000 198.51.100.5    -> DENY  (rule 90)  OK
+ C89  inbound  tcp port 65535 10.20.4.255     -> DENY  (no match (default deny))  OK
+ C91  outbound tcp port 8000  10.20.0.0       -> ALLOW (rule 100)  OK
+ C92  outbound tcp port 8000  10.20.0.1       -> ALLOW (rule 100)  OK
+ C93  outbound tcp port 8000  10.20.1.1       -> ALLOW (rule 100)  OK
+ C94  outbound tcp port 8000  10.20.3.254     -> ALLOW (rule 100)  OK
+ C95  outbound tcp port 8000  10.20.3.255     -> ALLOW (rule 100)  OK
+ C96  outbound udp port 8000  10.20.0.5       -> DENY  (no match (default deny))  OK
+ C97  outbound tcp port 8000  10.20.4.0       -> ALLOW (rule 110)  OK
+ C98  outbound tcp port 8000  10.20.5.1       -> ALLOW (rule 110)  OK
+ C99  outbound tcp port 8000  203.0.113.7     -> ALLOW (rule 110)  OK
+C100  outbound tcp port 8000  198.51.100.5    -> ALLOW (rule 110)  OK
+C101  outbound tcp port 1024  203.0.113.7     -> ALLOW (rule 110)  OK
+C102  outbound tcp port 65535 203.0.113.7     -> ALLOW (rule 110)  OK
+C103  outbound tcp port 51000 203.0.113.7     -> ALLOW (rule 110)  OK
+C104  outbound tcp port 1024  8.8.8.8         -> ALLOW (rule 110)  OK
+C105  outbound tcp port 65535 8.8.8.8         -> ALLOW (rule 110)  OK
+C106  outbound tcp port 51000 8.8.8.8         -> ALLOW (rule 110)  OK
+C107  outbound tcp port 1024  255.255.255.255 -> ALLOW (rule 110)  OK
+C108  outbound tcp port 65535 255.255.255.255 -> ALLOW (rule 110)  OK
+C109  outbound tcp port 51000 255.255.255.255 -> ALLOW (rule 110)  OK
+C110  outbound tcp port 1024  1.0.0.1         -> ALLOW (rule 110)  OK
+C111  outbound tcp port 65535 1.0.0.1         -> ALLOW (rule 110)  OK
+C112  outbound tcp port 51000 1.0.0.1         -> ALLOW (rule 110)  OK
+C113  outbound tcp port 1023  203.0.113.7     -> DENY  (no match (default deny))  OK
+C114  outbound tcp port 1023  10.20.0.5       -> DENY  (no match (default deny))  OK
+C115  outbound tcp port 51000 198.51.100.0    -> ALLOW (rule 110)  OK
+C116  outbound tcp port 51000 198.51.100.5    -> ALLOW (rule 110)  OK
+C117  outbound tcp port 51000 198.51.100.255  -> ALLOW (rule 110)  OK
+C118  outbound tcp port 51000 10.20.5.130     -> ALLOW (rule 110)  OK
+C119  outbound tcp port 51000 10.20.0.5       -> ALLOW (rule 110)  OK
+C120  outbound tcp port 51000 10.20.4.9       -> ALLOW (rule 110)  OK
+C121  outbound udp port 51000 203.0.113.7     -> DENY  (no match (default deny))  OK
+C122  outbound udp port 1024  8.8.8.8         -> DENY  (no match (default deny))  OK
+C123  outbound tcp port 80    203.0.113.7     -> DENY  (no match (default deny))  OK
+C124  outbound tcp port 443   203.0.113.7     -> DENY  (no match (default deny))  OK
+C125  outbound tcp port 22    203.0.113.7     -> DENY  (no match (default deny))  OK
+C126  outbound tcp port 53    203.0.113.7     -> DENY  (no match (default deny))  OK
+C127  outbound tcp port 1023  203.0.113.7     -> DENY  (no match (default deny))  OK
+C128  outbound tcp port 1     203.0.113.7     -> DENY  (no match (default deny))  OK
+C129  outbound tcp port 0     203.0.113.7     -> DENY  (no match (default deny))  OK
+C130  outbound tcp port 3306  203.0.113.7     -> ALLOW (rule 110)  OK
+C131  outbound tcp port 25    203.0.113.7     -> DENY  (no match (default deny))  OK
+C132  outbound tcp port 80    10.20.0.5       -> DENY  (no match (default deny))  OK
+C133  outbound tcp port 443   10.20.0.5       -> DENY  (no match (default deny))  OK
+C134  outbound tcp port 22    10.20.5.130     -> DENY  (no match (default deny))  OK
+C135  outbound tcp port 22    10.20.5.129     -> DENY  (no match (default deny))  OK
+C136  outbound udp port 53    8.8.8.8         -> DENY  (no match (default deny))  OK
+C137  outbound udp port 443   203.0.113.7     -> DENY  (no match (default deny))  OK
+C138  outbound udp port 80    203.0.113.7     -> DENY  (no match (default deny))  OK
+C139  outbound tcp port 80    198.51.100.5    -> DENY  (no match (default deny))  OK
+C140  outbound tcp port 1023  10.20.3.255     -> DENY  (no match (default deny))  OK
+C141  outbound tcp port 1023  10.20.4.0       -> DENY  (no match (default deny))  OK
+
+Correct: 140 / 140 = 100.0%
