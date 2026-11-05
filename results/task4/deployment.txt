@@ -1,0 +1,83 @@
+$ kubectl -n app get deploy,rs,pods,svc,endpoints,ingress,hpa -o wide
+NAME                     READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES             SELECTOR
+deployment.apps/parser   2/2     2            2           33m   parser       cc-kd/parser:1.0   app=parser
+
+NAME                          READY   STATUS    RESTARTS   AGE     IP           NODE                 NOMINATED NODE   READINESS GATES
+pod/parser-5f4b64b9d8-ltbmx   1/1     Running   0          16m     10.42.0.37   k3d-cc-kd-server-0   <none>           <none>
+pod/parser-5f4b64b9d8-srwpq   1/1     Running   0          5m16s   10.42.0.39   k3d-cc-kd-server-0   <none>           <none>
+
+NAME             TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+service/parser   ClusterIP   10.43.33.166   <none>        80/TCP    33m   app=parser
+
+NAME               ENDPOINTS                         AGE
+endpoints/parser   10.42.0.37:8000,10.42.0.39:8000   33m
+
+NAME                               CLASS     HOSTS   ADDRESS      PORTS   AGE
+ingress.networking.k8s.io/parser   traefik   *       172.20.0.3   80      33m
+
+NAME                                         REFERENCE           TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/parser   Deployment/parser   cpu: 0%/70%   1         2         2          33m
+
+$ kubectl -n app get deploy parser -o jsonpath (resources + probes)
+{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"500m","memory":"512Mi"}}
+readiness={"failureThreshold":1,"httpGet":{"path":"/readyz","port":"http","scheme":"HTTP"},"periodSeconds":2,"successThreshold":1,"timeoutSeconds":2}
+liveness={"failureThreshold":3,"httpGet":{"path":"/healthz","port":"http","scheme":"HTTP"},"initialDelaySeconds":10,"periodSeconds":10,"successThreshold":1,"timeoutSeconds":3}
+strategy={"rollingUpdate":{"maxSurge":1,"maxUnavailable":0},"type":"RollingUpdate"}
+
+$ curl -i -XPOST http://localhost:8080/parse (through the Traefik Ingress)
+HTTP/1.1 200 OK
+Content-Length: 67
+Content-Type: application/json
+Date: Thu, 05 Nov 2026 20:30:16 GMT
+Server: uvicorn
+X-Model-Version: v1
+X-Served-By: parser-5f4b64b9d8-srwpq
+
+{"intent":"weather_query","date":null,"time":null,"place":"london"}
+
+$ kubectl get nodes -o wide
+NAME                 STATUS   ROLES                  AGE   VERSION        INTERNAL-IP   EXTERNAL-IP   OS-IMAGE           KERNEL-VERSION     CONTAINER-RUNTIME
+k3d-cc-kd-server-0   Ready    control-plane,master   73m   v1.31.4+k3s1   172.20.0.3    <none>        K3s v1.31.4+k3s1   6.12.76-linuxkit   containerd://1.7.23-k3s2
+
+$ kubectl -n data get pods,svc,pvc
+NAME                             READY   STATUS    RESTARTS   AGE
+pod/seaweedfs-69fdc466f8-kzkgk   1/1     Running   0          72m
+
+NAME                         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+service/seaweedfs            ClusterIP   10.43.230.127   <none>        8333/TCP         72m
+service/seaweedfs-external   NodePort    10.43.116.104   <none>        8333:30333/TCP   72m
+
+NAME                                   STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+persistentvolumeclaim/seaweedfs-data   Bound    pvc-827026c5-8c10-4664-9992-1cdcb2a94e32   5Gi        RWO            local-path     <unset>                 72m
+
+$ s3 ls (both buckets)
+      197541  s3://datasets/commands_pool.jsonl
+      265852  s3://datasets/teacher/shard-0.jsonl
+      266568  s3://datasets/teacher/shard-1.jsonl
+      474729  s3://datasets/v1/train.jsonl
+          78  s3://datasets/v1/train.sha256
+         799  s3://models/smoke/config.json
+         111  s3://models/smoke/generation_config.json
+   281715176  s3://models/smoke/model.safetensors
+         473  s3://models/smoke/special_tokens_map.json
+     3564303  s3://models/smoke/tokenizer.json
+        4846  s3://models/smoke/tokenizer_config.json
+         740  s3://models/smoke/version.json
+         799  s3://models/v1/config.json
+         111  s3://models/v1/generation_config.json
+   226294123  s3://models/v1/model-v1.tar.gz
+   281715176  s3://models/v1/model.safetensors
+         734  s3://models/v1/model.sha256
+         473  s3://models/v1/special_tokens_map.json
+     3564303  s3://models/v1/tokenizer.json
+        4846  s3://models/v1/tokenizer_config.json
+         721  s3://models/v1/version.json
+         799  s3://models/v2/config.json
+         111  s3://models/v2/generation_config.json
+   226271299  s3://models/v2/model-v2.tar.gz
+   281715176  s3://models/v2/model.safetensors
+         734  s3://models/v2/model.sha256
+         473  s3://models/v2/special_tokens_map.json
+     3564303  s3://models/v2/tokenizer.json
+        4846  s3://models/v2/tokenizer_config.json
+         795  s3://models/v2/version.json

@@ -1,0 +1,6 @@
+horizontalpodautoscaler.autoscaling/parser patched
+NAME                      READY   STATUS    RESTARTS   AGE   IP           NODE                 NOMINATED NODE   READINESS GATES
+parser-5f4b64b9d8-ltbmx   1/1     Running   0          11m   10.42.0.37   k3d-cc-kd-server-0   <none>           <none>
+parser-5f4b64b9d8-srwpq   1/1     Running   0          5s    10.42.0.39   k3d-cc-kd-server-0   <none>           <none>
+horizontalpodautoscaler.autoscaling/parser patched
+requests=730 failures=0 failure_rate=0.000% p50=770ms p95=1000ms rps=6.11

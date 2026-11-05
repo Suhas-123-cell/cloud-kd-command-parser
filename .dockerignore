@@ -1,0 +1,8 @@
+.venv/
+.secrets/
+models/
+results/
+datasets/
+artifacts/
+.git/
+**/__pycache__/

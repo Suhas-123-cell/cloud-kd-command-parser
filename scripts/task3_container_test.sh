@@ -70,6 +70,7 @@ EOF
 } | tee "$OUT/memory_peak.txt"
 
 kill "$STATS_PID" 2>/dev/null || true
+wait "$STATS_PID" 2>/dev/null || true
 docker logs "$NAME" > "$OUT/container_log.txt" 2>&1
 docker rm -f "$NAME" >/dev/null
-echo "peak from docker stats samples:"; sort -t= -k3 "$OUT/docker_stats.txt" | awk '{print $4}' | sort -h | tail -1
+echo "highest docker stats sample: $(grep -o 'mem=[0-9.]*[MG]iB' "$OUT/docker_stats.txt" | sed 's/mem=//' | sort -h | tail -1)" | tee -a "$OUT/memory_peak.txt"

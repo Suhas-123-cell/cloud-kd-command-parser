@@ -1,0 +1,10 @@
+{
+  "requests": 50,
+  "status_counts": {
+    "200": 50
+  },
+  "latency_ms_mean": 685.1,
+  "latency_ms_p50": 694.1,
+  "latency_ms_p95": 783.2,
+  "latency_ms_max": 884.6
+}

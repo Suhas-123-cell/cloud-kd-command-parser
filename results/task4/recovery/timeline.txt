@@ -1,0 +1,11 @@
+20:09:20 start 3-minute load
+20:10:00 deleting pod parser-5f4b64b9d8-jftpg
+NAME                      READY   STATUS    RESTARTS   AGE   IP           NODE                 NOMINATED NODE   READINESS GATES
+parser-5f4b64b9d8-jftpg   1/1     Running   0          46s   10.42.0.31   k3d-cc-kd-server-0   <none>           <none>
+parser-5f4b64b9d8-lsct7   1/1     Running   0          46s   10.42.0.32   k3d-cc-kd-server-0   <none>           <none>
+pod "parser-5f4b64b9d8-jftpg" deleted from app namespace
+20:10:06 replica count restored: 2/2 ready
+NAME                      READY   STATUS    RESTARTS   AGE   IP           NODE                 NOMINATED NODE   READINESS GATES
+parser-5f4b64b9d8-lsct7   1/1     Running   0          52s   10.42.0.32   k3d-cc-kd-server-0   <none>           <none>
+parser-5f4b64b9d8-r4zmt   1/1     Running   0          6s    10.42.0.33   k3d-cc-kd-server-0   <none>           <none>
+requests=1085 failures=0 failure_rate=0.000% p50=660ms p95=1000ms rps=6.06

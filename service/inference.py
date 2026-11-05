@@ -28,11 +28,11 @@ def validate(raw):
     """Return the parsed 4-key object if `raw` satisfies schema.json, else None."""
     try:
         obj = json.loads(raw)
-    except (json.JSONDecodeError, TypeError):
+    except (ValueError, TypeError, RecursionError):  # JSONDecodeError is a ValueError
         return None
     if not isinstance(obj, dict) or set(obj) != set(KEYS):
         return None
-    if obj["intent"] not in INTENTS:
+    if not isinstance(obj["intent"], str) or obj["intent"] not in INTENTS:
         return None
     for k in ("date", "time", "place"):
         if obj[k] is not None and not isinstance(obj[k], str):
@@ -72,7 +72,8 @@ def pretranspose_linears(model):
 class Parser:
     """Loads a causal LM + tokenizer from a local directory and generates raw JSON text."""
 
-    def __init__(self, model_dir, max_new_tokens=64, threads=None, fast_linear=True, stop_at_newline=True):
+    def __init__(self, model_dir, max_new_tokens=64, threads=None, fast_linear=True, stop_at_newline=True,
+                 constrained_fallback=True):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -88,14 +89,18 @@ class Parser:
         newline_ids = self.tok.encode("\n") if stop_at_newline else []
         self.stop_ids = {self.tok.eos_token_id, *newline_ids}
 
-    def generate(self, command):
+        self.constrained_fallback = constrained_fallback
+        # " {"intent": "<intent>", "date":" for each allowed intent; the tokenisation of this
+        # prefix is a prefix of the tokenised training target (checked in tests).
+        self.intent_prefixes = {i: self.tok(f' {{"intent": "{i}", "date":').input_ids for i in sorted(INTENTS)}
+        self.fallbacks = 0
+
+    def _greedy(self, ids, budget):
+        """Greedy decoding from token ids; returns the new token ids (stop token excluded)."""
         torch = self.torch
-        ids = self.tok(prompt_for(command), return_tensors="pt").input_ids
-        out = []
-        past = None
-        cur = ids
+        out, past, cur = [], None, torch.tensor([ids])
         with torch.inference_mode():
-            for _ in range(self.max_new_tokens):
+            for _ in range(budget):
                 res = self.model(input_ids=cur, past_key_values=past, use_cache=True)
                 past = res.past_key_values
                 nxt = int(res.logits[0, -1].argmax())
@@ -103,4 +108,37 @@ class Parser:
                     break
                 out.append(nxt)
                 cur = torch.tensor([[nxt]])
-        return self.tok.decode(out, skip_special_tokens=True).strip()
+        return out
+
+    def _best_intent_prefix(self, prompt_ids):
+        """Score every allowed intent prefix by the model's own log-probability; return the best ids."""
+        torch = self.torch
+        names = list(self.intent_prefixes)
+        seqs = [prompt_ids + self.intent_prefixes[n] for n in names]
+        width = max(map(len, seqs))
+        batch = torch.full((len(seqs), width), self.tok.eos_token_id, dtype=torch.long)
+        mask = torch.zeros_like(batch)
+        for k, s in enumerate(seqs):
+            batch[k, :len(s)] = torch.tensor(s)
+            mask[k, :len(s)] = 1
+        with torch.inference_mode():
+            logp = torch.log_softmax(self.model(input_ids=batch, attention_mask=mask).logits, dim=-1)
+        scores = []
+        for k, n in enumerate(names):
+            pre = self.intent_prefixes[n]
+            pos = range(len(prompt_ids) - 1, len(prompt_ids) - 1 + len(pre))
+            scores.append(sum(float(logp[k, p, t]) for p, t in zip(pos, pre)))
+        return self.intent_prefixes[names[max(range(len(names)), key=scores.__getitem__)]]
+
+    def generate(self, command):
+        prompt_ids = self.tok(prompt_for(command)).input_ids
+        text = self.tok.decode(self._greedy(prompt_ids, self.max_new_tokens), skip_special_tokens=True).strip()
+        if not self.constrained_fallback or validate(text) is not None:
+            return text
+        # Schema-constrained fallback: the free greedy output broke schema.json (e.g. an intent
+        # outside the eight). Force the best-scoring allowed intent prefix, then let the model
+        # finish the slots greedily. Outputs that were already valid are never changed.
+        self.fallbacks += 1
+        prefix = self._best_intent_prefix(prompt_ids)
+        rest = self._greedy(prompt_ids + prefix, max(self.max_new_tokens - len(prefix), 1))
+        return self.tok.decode(prefix + rest, skip_special_tokens=True).strip()

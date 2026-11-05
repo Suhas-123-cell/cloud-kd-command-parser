@@ -96,5 +96,5 @@
 {"id": "V096", "prediction": "{\"intent\": \"weather_query\", \"date\": \"this week\", \"time\": null, \"place\": null}"}
 {"id": "V097", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V098", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"next\", \"time\": null, \"place\": null}"}
-{"id": "V099", "prediction": "{\"intent\": \"alarm_remove\", \"date\": null, \"time\": \"eight hundred\", \"place\": null}"}
+{"id": "V099", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \"eight hundred\", \"place\": null}"}
 {"id": "V100", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"upcoming\", \"time\": null, \"place\": null}"}

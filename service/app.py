@@ -41,7 +41,8 @@ S3_ENDPOINT = os.environ.get("S3_ENDPOINT", "http://localhost:8333")
 MAX_NEW_TOKENS = int(os.environ.get("MAX_NEW_TOKENS", "64"))
 FAULT_INJECT = os.environ.get("FAULT_INJECT", "0") == "1"
 SERVED_BY = os.environ.get("POD_NAME") or socket.gethostname()
-THREADS = int(os.environ.get("TORCH_THREADS", "1"))
+THREADS = 1  # one intra-op thread per replica: the container CPU limit is 1 core
+LOAD_ATTEMPTS = 5
 
 state = {"parser": None, "error": None}
 lock = threading.Lock()  # one generation at a time per replica (CPU-bound; avoids thrashing)
@@ -67,18 +68,25 @@ def download_model(uri, dest):
 
 def load_model():
     t0 = time.time()
-    try:
+    for attempt in range(1, LOAD_ATTEMPTS + 1):
         dest = tempfile.mkdtemp(prefix="model-")
-        log.info("model download start: %s from %s", MODEL_URI, S3_ENDPOINT)
-        download_model(MODEL_URI, dest)
-        log.info("model download done in %.1fs", time.time() - t0)
-        state["parser"] = Parser(dest, max_new_tokens=MAX_NEW_TOKENS, threads=THREADS)
-        shutil.rmtree(dest, ignore_errors=True)
-        log.info("model %s ready in %.1fs (pod %s, fault_inject=%s)",
-                 MODEL_VERSION, time.time() - t0, SERVED_BY, FAULT_INJECT)
-    except Exception as e:  # stay unready; the liveness probe keeps passing, logs show why
-        state["error"] = repr(e)
-        log.exception("model load failed")
+        try:
+            log.info("model download start: %s from %s (attempt %d)", MODEL_URI, S3_ENDPOINT, attempt)
+            download_model(MODEL_URI, dest)
+            log.info("model download done in %.1fs", time.time() - t0)
+            state["parser"] = Parser(dest, max_new_tokens=MAX_NEW_TOKENS, threads=THREADS)
+            log.info("model %s ready in %.1fs (pod %s, fault_inject=%s)",
+                     MODEL_VERSION, time.time() - t0, SERVED_BY, FAULT_INJECT)
+            return
+        except Exception as e:
+            state["error"] = repr(e)
+            log.exception("model load attempt %d failed", attempt)
+            time.sleep(min(5 * attempt, 20))
+        finally:
+            shutil.rmtree(dest, ignore_errors=True)
+    # Give up: exit so Kubernetes restarts the container instead of leaving it unready forever.
+    log.error("model could not be loaded after %d attempts; exiting", LOAD_ATTEMPTS)
+    os._exit(1)
 
 
 @app.on_event("startup")
@@ -99,8 +107,12 @@ def parse(req: ParseRequest):
     parser = state["parser"]
     if parser is None:
         return JSONResponse({"error": "model_not_ready"}, status_code=503, headers=headers())
-    with lock:
-        raw = parser.generate(req.text)
+    try:
+        with lock:
+            raw = parser.generate(req.text)
+    except Exception:  # never leak a plain-text 500: any generation failure is invalid output
+        log.exception("generation failed for %r", req.text)
+        raw = None
     if FAULT_INJECT:
         raw = "not json"
     obj = validate(raw)

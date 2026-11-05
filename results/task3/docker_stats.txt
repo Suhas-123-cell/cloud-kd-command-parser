@@ -1,0 +1,17 @@
+01:59:21 parser-limits cpu=71.76% mem=79.94MiB / 1GiB
+01:59:23 parser-limits cpu=81.58% mem=477.1MiB / 1GiB
+01:59:26 parser-limits cpu=99.12% mem=476.7MiB / 1GiB
+01:59:29 parser-limits cpu=100.48% mem=476.7MiB / 1GiB
+01:59:31 parser-limits cpu=98.77% mem=477MiB / 1GiB
+01:59:33 parser-limits cpu=99.60% mem=477MiB / 1GiB
+01:59:36 parser-limits cpu=101.38% mem=477.2MiB / 1GiB
+01:59:38 parser-limits cpu=101.69% mem=477.7MiB / 1GiB
+01:59:40 parser-limits cpu=100.40% mem=477.5MiB / 1GiB
+01:59:42 parser-limits cpu=98.97% mem=477.5MiB / 1GiB
+01:59:44 parser-limits cpu=101.88% mem=477.3MiB / 1GiB
+01:59:47 parser-limits cpu=99.40% mem=477.6MiB / 1GiB
+01:59:49 parser-limits cpu=99.13% mem=477.9MiB / 1GiB
+01:59:51 parser-limits cpu=98.93% mem=477.9MiB / 1GiB
+01:59:53 parser-limits cpu=99.24% mem=477.9MiB / 1GiB
+01:59:56 parser-limits cpu=100.77% mem=477.7MiB / 1GiB
+01:59:58 parser-limits cpu=72.65% mem=280.3MiB / 1GiB
