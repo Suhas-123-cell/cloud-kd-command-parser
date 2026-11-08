@@ -1,0 +1,52 @@
+{
+  "base": {
+    "json_validity": 99.0,
+    "intent_accuracy": 77.0,
+    "date_accuracy": 71.0,
+    "time_accuracy": 89.0,
+    "place_accuracy": 86.0,
+    "full_frame": 41.0,
+    "examples": 100,
+    "missing_predictions": 0
+  },
+  "base_schema": {
+    "json_validity": 100.0,
+    "intent_accuracy": 79.0,
+    "date_accuracy": 72.0,
+    "time_accuracy": 90.0,
+    "place_accuracy": 87.0,
+    "full_frame": 41.0,
+    "examples": 100,
+    "missing_predictions": 0
+  },
+  "v2": {
+    "json_validity": 99.0,
+    "intent_accuracy": 84.0,
+    "date_accuracy": 81.0,
+    "time_accuracy": 86.0,
+    "place_accuracy": 92.0,
+    "full_frame": 55.0,
+    "examples": 100,
+    "missing_predictions": 0
+  },
+  "v2_schema": {
+    "json_validity": 100.0,
+    "intent_accuracy": 84.0,
+    "date_accuracy": 82.0,
+    "time_accuracy": 87.0,
+    "place_accuracy": 93.0,
+    "full_frame": 55.0,
+    "examples": 100,
+    "missing_predictions": 0
+  },
+  "v3_schema": {
+    "json_validity": 100.0,
+    "intent_accuracy": 84.0,
+    "date_accuracy": 82.0,
+    "time_accuracy": 86.0,
+    "place_accuracy": 94.0,
+    "full_frame": 55.0,
+    "examples": 100,
+    "missing_predictions": 0
+  }
+}

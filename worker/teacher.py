@@ -2,17 +2,29 @@
 
 The reply is returned exactly as generated: no stripping, no repair.
 """
+import json
 import os
 from pathlib import Path
 
 import requests
 
+ROOT = Path(__file__).resolve().parent.parent
 TEACHER_MODEL = "phi3.5"
 # Fixed by the assignment: temperature 0, seed 42.
 # num_predict caps runaway replies; the blank-line stop sequence ends generation before
 # phi3.5 appends "Note: ..." paragraphs or invents extra examples (validity 89% -> 99% on validation).
 OPTIONS = {"temperature": 0, "seed": 42, "num_predict": 96, "stop": ["\n\n"]}
-DEFAULT_PROMPT = Path(__file__).resolve().parent.parent / "prompts" / "teacher_prompt.txt"
+DEFAULT_PROMPT = ROOT / "prompts" / "teacher_prompt.txt"
+
+# Ollama structured output: decoding is constrained to an object with exactly the four keys and an
+# intent from the eight in data/schema.json. The reply is still phi3.5's own generated text.
+_SCHEMA = json.loads((ROOT / "data" / "schema.json").read_text())
+FORMAT = {
+    "type": "object",
+    "properties": {"intent": {"enum": _SCHEMA["intents"]},
+                   **{k: {"type": ["string", "null"]} for k in ("date", "time", "place")}},
+    "required": _SCHEMA["keys"],
+}
 
 
 def load_prompt(path=None):
@@ -32,6 +44,7 @@ def ask_teacher(template, command, url=None, timeout=300):
             "model": TEACHER_MODEL,
             "prompt": build_prompt(template, command),
             "stream": False,
+            "format": FORMAT,
             "options": OPTIONS,
         },
         timeout=timeout,
