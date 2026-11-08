@@ -7,7 +7,7 @@ SHELL := /bin/bash
 
 CLUSTER     := cc-kd
 REPO        ?= Suhas-123-cell/cloud-kd-command-parser
-RELEASE_TAG ?= models
+RELEASE_TAG ?= models-r2
 PY          := .venv/bin/python
 TORCH_INDEX := https://download.pytorch.org/whl/cpu
 OLLAMA_URL  ?= http://host.docker.internal:11434

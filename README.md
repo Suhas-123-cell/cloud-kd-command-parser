@@ -3,20 +3,20 @@
 CS3081 Cloud Computing mini project · Suhas Chowdary · Roll no. **230101094**
 
 **GitHub repository:** https://github.com/Suhas-123-cell/cloud-kd-command-parser
-**Model release (v1, v2, checksums, version info):** https://github.com/Suhas-123-cell/cloud-kd-command-parser/releases/tag/models
+**Model release (v1, v2, checksums, version info):** https://github.com/Suhas-123-cell/cloud-kd-command-parser/releases/tag/models-r2
 **Report:** [`report/report.pdf`](report/report.pdf) · **AI use:** [`AI_USE.md`](AI_USE.md)
 
-A teacher (phi3.5, 3.8 B, via Ollama, temperature 0, seed 42) labels 3,000 commands in two parallel
+A teacher (phi3.5, 3.8 B, via Ollama, temperature 0, seed 42, JSON-schema structured output) labels 3,000 commands in two parallel
 Kubernetes workers. The cleaned replies train EleutherAI/pythia-70m (sequence-level knowledge
 distillation, CPU only). The student is served by a FastAPI container on a k3d cluster that pulls its
 weights from SeaweedFS (S3) at start-up, behind Traefik, with probes, an HPA and rolling updates.
 
 | Model (validation.jsonl, 100 commands) | JSON validity | Intent | Full frame |
 |---|---:|---:|---:|
-| Teacher phi3.5 | 99 % | 77 % | 41 % |
+| Teacher phi3.5 | 100 % | 84 % | 55 % |
 | Untrained pythia-70m | 0 % | 0 % | 0 % |
-| **Student v1 (served)** | **100 %** | **77 %** | **39 %** |
-| Student v2 | 99 % | 73 % | 41 % |
+| **Student v1 (served)** | **100 %** | **85 %** | **56 %** |
+| Student v2 | 99 % | 86 % | 56 % |
 
 Standard load test through the Ingress (2 replicas, 4 users, 2 min): 738 requests, **0 failures**,
 p50 630 ms, p95 1,000 ms, 6.17 req/s. Raw evidence for every number is in [`results/`](results/).
