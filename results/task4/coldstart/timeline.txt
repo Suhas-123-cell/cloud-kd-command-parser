@@ -1,4 +1,4 @@
-20:09:02 HPA minReplicas temporarily 2
-20:09:03 run 1: deleting all pods: parser-5f4b64b9d8-9tdgt parser-5f4b64b9d8-qstwc
-20:09:08 run 2: deleting all pods: parser-5f4b64b9d8-5z8vl parser-5f4b64b9d8-847bs parser-5f4b64b9d8-9tdgt parser-5f4b64b9d8-qstwc
-20:09:14 run 3: deleting all pods: parser-5f4b64b9d8-5z8vl parser-5f4b64b9d8-847bs parser-5f4b64b9d8-jn7kh parser-5f4b64b9d8-zc9c9
+17:44:49 HPA minReplicas temporarily 2
+17:44:49 run 1: deleting all pods: parser-669c9f6ccd-lrd9n parser-669c9f6ccd-xx2n8
+17:44:57 run 2: deleting all pods: parser-669c9f6ccd-29974 parser-669c9f6ccd-x6wx9
+17:45:02 run 3: deleting all pods: parser-669c9f6ccd-29974 parser-669c9f6ccd-7kj2f parser-669c9f6ccd-8x2gq parser-669c9f6ccd-x6wx9

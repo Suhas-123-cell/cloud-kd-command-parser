@@ -1,22 +1,22 @@
 $ kubectl -n app get deploy,rs,pods,svc,endpoints,ingress,hpa -o wide
 NAME                     READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES             SELECTOR
-deployment.apps/parser   2/2     2            2           33m   parser       cc-kd/parser:1.0   app=parser
+deployment.apps/parser   2/2     2            2           24s   parser       cc-kd/parser:1.0   app=parser
 
-NAME                          READY   STATUS    RESTARTS   AGE     IP           NODE                 NOMINATED NODE   READINESS GATES
-pod/parser-5f4b64b9d8-ltbmx   1/1     Running   0          16m     10.42.0.37   k3d-cc-kd-server-0   <none>           <none>
-pod/parser-5f4b64b9d8-srwpq   1/1     Running   0          5m16s   10.42.0.39   k3d-cc-kd-server-0   <none>           <none>
+NAME                          READY   STATUS    RESTARTS   AGE   IP           NODE                 NOMINATED NODE   READINESS GATES
+pod/parser-669c9f6ccd-42ndh   1/1     Running   0          24s   10.42.0.12   k3d-cc-kd-server-0   <none>           <none>
+pod/parser-669c9f6ccd-k4scp   1/1     Running   0          24s   10.42.0.11   k3d-cc-kd-server-0   <none>           <none>
 
 NAME             TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE   SELECTOR
-service/parser   ClusterIP   10.43.33.166   <none>        80/TCP    33m   app=parser
+service/parser   ClusterIP   10.43.84.176   <none>        80/TCP    24s   app=parser
 
 NAME               ENDPOINTS                         AGE
-endpoints/parser   10.42.0.37:8000,10.42.0.39:8000   33m
+endpoints/parser   10.42.0.11:8000,10.42.0.12:8000   24s
 
 NAME                               CLASS     HOSTS   ADDRESS      PORTS   AGE
-ingress.networking.k8s.io/parser   traefik   *       172.20.0.3   80      33m
+ingress.networking.k8s.io/parser   traefik   *       172.20.0.3   80      24s
 
-NAME                                         REFERENCE           TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
-horizontalpodautoscaler.autoscaling/parser   Deployment/parser   cpu: 0%/70%   1         2         2          33m
+NAME                                         REFERENCE           TARGETS              MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/parser   Deployment/parser   cpu: <unknown>/70%   1         2         2          24s
 
 $ kubectl -n app get deploy parser -o jsonpath (resources + probes)
 {"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"500m","memory":"512Mi"}}
@@ -28,44 +28,37 @@ $ curl -i -XPOST http://localhost:8080/parse (through the Traefik Ingress)
 HTTP/1.1 200 OK
 Content-Length: 67
 Content-Type: application/json
-Date: Thu, 05 Nov 2026 20:30:16 GMT
+Date: Sun, 08 Nov 2026 17:30:07 GMT
 Server: uvicorn
 X-Model-Version: v1
-X-Served-By: parser-5f4b64b9d8-srwpq
+X-Served-By: parser-669c9f6ccd-42ndh
 
 {"intent":"weather_query","date":null,"time":null,"place":"london"}
 
 $ kubectl get nodes -o wide
-NAME                 STATUS   ROLES                  AGE   VERSION        INTERNAL-IP   EXTERNAL-IP   OS-IMAGE           KERNEL-VERSION     CONTAINER-RUNTIME
-k3d-cc-kd-server-0   Ready    control-plane,master   73m   v1.31.4+k3s1   172.20.0.3    <none>        K3s v1.31.4+k3s1   6.12.76-linuxkit   containerd://1.7.23-k3s2
+NAME                 STATUS   ROLES                  AGE     VERSION        INTERNAL-IP   EXTERNAL-IP   OS-IMAGE           KERNEL-VERSION     CONTAINER-RUNTIME
+k3d-cc-kd-server-0   Ready    control-plane,master   3m36s   v1.31.4+k3s1   172.20.0.3    <none>        K3s v1.31.4+k3s1   6.12.76-linuxkit   containerd://1.7.23-k3s2
 
 $ kubectl -n data get pods,svc,pvc
 NAME                             READY   STATUS    RESTARTS   AGE
-pod/seaweedfs-69fdc466f8-kzkgk   1/1     Running   0          72m
+pod/seaweedfs-69fdc466f8-ljcpk   1/1     Running   0          3m27s
 
 NAME                         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
-service/seaweedfs            ClusterIP   10.43.230.127   <none>        8333/TCP         72m
-service/seaweedfs-external   NodePort    10.43.116.104   <none>        8333:30333/TCP   72m
+service/seaweedfs            ClusterIP   10.43.109.124   <none>        8333/TCP         3m27s
+service/seaweedfs-external   NodePort    10.43.62.150    <none>        8333:30333/TCP   3m27s
 
 NAME                                   STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
-persistentvolumeclaim/seaweedfs-data   Bound    pvc-827026c5-8c10-4664-9992-1cdcb2a94e32   5Gi        RWO            local-path     <unset>                 72m
+persistentvolumeclaim/seaweedfs-data   Bound    pvc-6b3174dc-a28d-4c3d-819f-cafaf9e3dfe0   5Gi        RWO            local-path     <unset>                 3m27s
 
 $ s3 ls (both buckets)
       197541  s3://datasets/commands_pool.jsonl
-      265852  s3://datasets/teacher/shard-0.jsonl
-      266568  s3://datasets/teacher/shard-1.jsonl
-      474729  s3://datasets/v1/train.jsonl
+      261604  s3://datasets/teacher/shard-0.jsonl
+      261722  s3://datasets/teacher/shard-1.jsonl
+      499055  s3://datasets/v1/train.jsonl
           78  s3://datasets/v1/train.sha256
-         799  s3://models/smoke/config.json
-         111  s3://models/smoke/generation_config.json
-   281715176  s3://models/smoke/model.safetensors
-         473  s3://models/smoke/special_tokens_map.json
-     3564303  s3://models/smoke/tokenizer.json
-        4846  s3://models/smoke/tokenizer_config.json
-         740  s3://models/smoke/version.json
          799  s3://models/v1/config.json
          111  s3://models/v1/generation_config.json
-   226294123  s3://models/v1/model-v1.tar.gz
+   226241856  s3://models/v1/model-v1.tar.gz
    281715176  s3://models/v1/model.safetensors
          734  s3://models/v1/model.sha256
          473  s3://models/v1/special_tokens_map.json
@@ -74,7 +67,7 @@ $ s3 ls (both buckets)
          721  s3://models/v1/version.json
          799  s3://models/v2/config.json
          111  s3://models/v2/generation_config.json
-   226271299  s3://models/v2/model-v2.tar.gz
+   226253447  s3://models/v2/model-v2.tar.gz
    281715176  s3://models/v2/model.safetensors
          734  s3://models/v2/model.sha256
          473  s3://models/v2/special_tokens_map.json

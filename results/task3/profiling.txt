@@ -1,17 +1,17 @@
 torch 2.5.1, threads 1
-Linear 512->2048: F.linear 4.32 ms | x @ W^T(pre-transposed, contiguous) 0.34 ms
-Linear 512->50304: F.linear 20.33 ms | x @ W^T(pre-transposed, contiguous) 5.05 ms
+Linear 512->2048: F.linear 3.48 ms | x @ W^T(pre-transposed, contiguous) 0.32 ms
+Linear 512->50304: F.linear 20.00 ms | x @ W^T(pre-transposed, contiguous) 5.35 ms
 -----------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
                                                  Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg    # of Calls  
 -----------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
-                                          aten::addmm        72.41%     473.257ms        72.47%     473.669ms       3.947ms           120  
-                                             aten::mm        24.25%     158.527ms        24.25%     158.528ms      31.706ms             5  
-                                           aten::gelu         2.31%      15.086ms         2.31%      15.086ms     502.863us            30  
-                                   aten::index_select         0.11%     733.624us         0.12%     770.458us     154.092us             5  
-    aten::_scaled_dot_product_flash_attention_for_cpu         0.09%     604.998us         0.12%     786.960us      26.232us            30  
+                                          aten::addmm        55.75%     387.251ms        55.81%     387.662ms       3.231ms           120  
+                                             aten::mm        42.97%     298.473ms        42.97%     298.474ms      59.695ms             5  
+                                           aten::gelu         0.38%       2.649ms         0.38%       2.649ms      88.317us            30  
+                                         aten::linear         0.13%     874.068us        98.99%     687.617ms       5.501ms           125  
+                                   aten::index_select         0.11%     746.996us         0.11%     789.623us     157.925us             5  
 -----------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
-Self CPU time total: 653.601ms
+Self CPU time total: 694.654ms
 
-F.linear (original): 30 requests, mean 3927 ms/request
-pre-transposed: 30 requests, mean 704 ms/request
+F.linear (original): 30 requests, mean 3713 ms/request
+pre-transposed: 30 requests, mean 683 ms/request
 identical outputs: 30/30

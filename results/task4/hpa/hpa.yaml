@@ -4,11 +4,11 @@ metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
       {"apiVersion":"autoscaling/v2","kind":"HorizontalPodAutoscaler","metadata":{"annotations":{},"name":"parser","namespace":"app"},"spec":{"behavior":{"scaleDown":{"stabilizationWindowSeconds":60}},"maxReplicas":2,"metrics":[{"resource":{"name":"cpu","target":{"averageUtilization":70,"type":"Utilization"}},"type":"Resource"}],"minReplicas":1,"scaleTargetRef":{"apiVersion":"apps/v1","kind":"Deployment","name":"parser"}}}
-  creationTimestamp: "2026-11-05T19:57:14Z"
+  creationTimestamp: "2026-11-08T17:29:43Z"
   name: parser
   namespace: app
-  resourceVersion: "2830"
-  uid: f0d73f0e-b5ad-45fe-8d1b-f4bdcbda45f9
+  resourceVersion: "867"
+  uid: 33e3ad0c-e2c3-4265-b5de-7299fc7bd456
 spec:
   behavior:
     scaleDown:
@@ -43,29 +43,18 @@ spec:
     name: parser
 status:
   conditions:
-  - lastTransitionTime: "2026-11-05T19:57:29Z"
-    message: recommended size matches current size
-    reason: ReadyForNewScale
+  - lastTransitionTime: "2026-11-08T17:29:58Z"
+    message: the HPA controller was able to get the target's current scale
+    reason: SucceededGetScale
     status: "True"
     type: AbleToScale
-  - lastTransitionTime: "2026-11-05T20:14:30Z"
-    message: the HPA was able to successfully calculate a replica count from cpu resource
-      utilization (percentage of request)
-    reason: ValidMetricFound
-    status: "True"
+  - lastTransitionTime: "2026-11-08T17:29:58Z"
+    message: 'the HPA was unable to compute the replica count: failed to get cpu utilization:
+      did not receive metrics for targeted pods (pods might be unready)'
+    reason: FailedGetResourceMetric
+    status: "False"
     type: ScalingActive
-  - lastTransitionTime: "2026-11-05T20:13:45Z"
-    message: the desired replica count is more than the maximum replica count
-    reason: TooManyReplicas
-    status: "True"
-    type: ScalingLimited
   currentMetrics:
-  - resource:
-      current:
-        averageUtilization: 178
-        averageValue: 891m
-      name: cpu
-    type: Resource
+  - type: ""
   currentReplicas: 2
-  desiredReplicas: 2
-  lastScaleTime: "2026-11-05T20:04:59Z"
+  desiredReplicas: 0

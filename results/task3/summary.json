@@ -3,8 +3,8 @@
   "status_counts": {
     "200": 50
   },
-  "latency_ms_mean": 685.1,
-  "latency_ms_p50": 694.1,
-  "latency_ms_p95": 783.2,
-  "latency_ms_max": 884.6
+  "latency_ms_mean": 697.0,
+  "latency_ms_p50": 696.0,
+  "latency_ms_p95": 785.9,
+  "latency_ms_max": 803.1
 }

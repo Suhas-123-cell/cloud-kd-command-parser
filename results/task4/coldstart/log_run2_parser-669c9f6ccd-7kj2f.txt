@@ -1,0 +1,20 @@
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-11-08 17:44:57,960 INFO model download start: s3://models/v1/ from http://seaweedfs.data.svc.cluster.local:8333 (attempt 1)
+2026-11-08 17:44:57,964 INFO Found credentials in environment variables.
+2026-11-08 17:44:58,015 INFO downloaded s3://models/v1/config.json (799 bytes)
+2026-11-08 17:44:58,017 INFO downloaded s3://models/v1/generation_config.json (111 bytes)
+INFO:     10.42.0.1:41244 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+2026-11-08 17:44:58,824 INFO downloaded s3://models/v1/model.safetensors (281715176 bytes)
+2026-11-08 17:44:58,829 INFO downloaded s3://models/v1/special_tokens_map.json (473 bytes)
+2026-11-08 17:44:58,840 INFO downloaded s3://models/v1/tokenizer.json (3564303 bytes)
+2026-11-08 17:44:58,842 INFO downloaded s3://models/v1/tokenizer_config.json (4846 bytes)
+2026-11-08 17:44:58,844 INFO downloaded s3://models/v1/version.json (721 bytes)
+2026-11-08 17:44:58,844 INFO model download done in 0.9s
+INFO:     10.42.0.1:41246 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     10.42.0.1:41258 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+2026-11-08 17:45:00,069 INFO model v1 ready in 2.1s (pod parser-669c9f6ccd-7kj2f, fault_inject=False)
+INFO:     10.42.0.1:41260 - "GET /readyz HTTP/1.1" 200 OK
+INFO:     10.42.0.1:41272 - "GET /readyz HTTP/1.1" 200 OK

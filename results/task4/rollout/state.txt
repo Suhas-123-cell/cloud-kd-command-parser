@@ -1,866 +1,860 @@
---- 20:12:29
+--- 17:36:46
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:31
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     1     7m3s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:36:48
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:33
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     1     7m5s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:36:50
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:35
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     1     7m7s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:36:52
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:38
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     1     7m10s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:36:55
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:40
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     1     7m12s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:36:57
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:42
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     1     7m14s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:36:59
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:44
+hpa: parser   Deployment/parser   cpu: 105%/70%   2     2     2     7m16s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:01
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:46
+hpa: parser   Deployment/parser   cpu: 105%/70%   2     2     2     7m18s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:03
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 119%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:48
+hpa: parser   Deployment/parser   cpu: 105%/70%   2     2     2     7m20s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:05
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 119%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:50
+hpa: parser   Deployment/parser   cpu: 105%/70%   2     2     2     7m22s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:07
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 119%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:52
+hpa: parser   Deployment/parser   cpu: 105%/70%   2     2     2     7m25s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:10
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 119%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:55
+hpa: parser   Deployment/parser   cpu: 105%/70%   2     2     2     7m27s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:12
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 119%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:57
+hpa: parser   Deployment/parser   cpu: 105%/70%   2     2     2     7m29s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:14
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 119%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:12:59
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m31s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:16
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 119%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:13:01
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m33s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:18
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 165%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:13:03
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m35s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:20
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 165%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:13:05
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m37s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:22
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 165%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:13:07
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m40s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:25
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 165%/70%   2     2     2     15m
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:13:10
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m42s
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:27
 deploy desired,ready,updated,available: 2     2     1     2
-hpa: parser   Deployment/parser   cpu: 165%/70%   2     2     2     15m
-pod: parser-5d848f6866-7rlcw   Pending   false   v2
-pod: parser-5f4b64b9d8-lsct7   Running   true    v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true    v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=
---- 20:13:12
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m44s
+pod: parser-5b7c85f5d8-dchsb   Pending   false   v2
+pod: parser-669c9f6ccd-42ndh   Running   true    v1
+pod: parser-669c9f6ccd-n2gzd   Running   true    v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=
+--- 17:37:29
 deploy desired,ready,updated,available: 2     2     1     2
-hpa: parser   Deployment/parser   cpu: 165%/70%   2     2     2     15m
-pod: parser-5d848f6866-7rlcw   Running   false   v2
-pod: parser-5f4b64b9d8-lsct7   Running   true    v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true    v1
-endpoints ready=parser-5f4b64b9d8-lsct7 parser-5f4b64b9d8-r4zmt notReady=parser-5d848f6866-7rlcw
---- 20:13:14
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m46s
+pod: parser-5b7c85f5d8-dchsb   Running   false   v2
+pod: parser-669c9f6ccd-42ndh   Running   true    v1
+pod: parser-669c9f6ccd-n2gzd   Running   true    v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-669c9f6ccd-n2gzd notReady=parser-5b7c85f5d8-dchsb
+--- 17:37:31
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 165%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true    v2
-pod: parser-5d848f6866-gz597   Running   false   v2
-pod: parser-5f4b64b9d8-lsct7   Running   true    v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true    v1
-endpoints ready=parser-5f4b64b9d8-r4zmt parser-5d848f6866-7rlcw notReady=parser-5d848f6866-gz597
---- 20:13:16
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m48s
+pod: parser-5b7c85f5d8-dchsb   Running   true    v2
+pod: parser-5b7c85f5d8-sxblg   Pending   false   v2
+pod: parser-669c9f6ccd-42ndh   Running   true    v1
+pod: parser-669c9f6ccd-n2gzd   Running   true    v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-5b7c85f5d8-dchsb notReady=
+--- 17:37:33
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true    v2
-pod: parser-5d848f6866-gz597   Running   false   v2
-pod: parser-5f4b64b9d8-lsct7   Running   true    v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true    v1
-endpoints ready=parser-5f4b64b9d8-r4zmt parser-5d848f6866-7rlcw notReady=parser-5d848f6866-gz597
---- 20:13:18
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m50s
+pod: parser-5b7c85f5d8-dchsb   Running   true    v2
+pod: parser-5b7c85f5d8-sxblg   Running   false   v2
+pod: parser-669c9f6ccd-42ndh   Running   true    v1
+pod: parser-669c9f6ccd-n2gzd   Running   true    v1
+endpoints ready=parser-669c9f6ccd-42ndh parser-5b7c85f5d8-dchsb notReady=parser-5b7c85f5d8-sxblg
+--- 17:37:35
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true    v2
-pod: parser-5d848f6866-gz597   Running   true    v2
-pod: parser-5f4b64b9d8-lsct7   Running   false   v1
-pod: parser-5f4b64b9d8-r4zmt   Running   true    v1
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:20
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m52s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+pod: parser-669c9f6ccd-n2gzd   Running   true   v1
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:37:37
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-pod: parser-5f4b64b9d8-r4zmt   Running   true   v1
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:23
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m55s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:37:40
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running     true    v2
-pod: parser-5d848f6866-gz597   Running     true    v2
-pod: parser-5f4b64b9d8-r4zmt   Succeeded   false   v1
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:25
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m57s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+pod: parser-669c9f6ccd-42ndh   Running   true   v1
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:37:42
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:27
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     7m59s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:37:44
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:29
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m1s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:37:46
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:31
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m3s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:37:48
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:33
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m5s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:37:50
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:35
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m7s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:37:52
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:38
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m9s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:37:55
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:40
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m12s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:37:57
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:42
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m14s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:37:59
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:44
+hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     8m16s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:38:01
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:46
+hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     8m18s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:38:03
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:48
+hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     8m20s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:38:05
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:50
+hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     8m22s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:38:07
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:52
+hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     8m24s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:38:10
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:55
+hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     8m27s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:38:12
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:57
+hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     8m29s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:38:14
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true   v2
-pod: parser-5d848f6866-gz597   Running   true   v2
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=
---- 20:13:59
+hpa: parser   Deployment/parser   cpu: 192%/70%   2     2     2     8m31s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:38:16
 deploy desired,ready,updated,available: 2     2     1     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true    v2
-pod: parser-5d848f6866-gz597   Running   true    v2
-pod: parser-5f4b64b9d8-zcsxc   Running   false   v1
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=parser-5f4b64b9d8-zcsxc
---- 20:14:01
+hpa: parser   Deployment/parser   cpu: 192%/70%   2     2     2     8m33s
+pod: parser-5b7c85f5d8-dchsb   Running   true    v2
+pod: parser-5b7c85f5d8-sxblg   Running   true    v2
+pod: parser-669c9f6ccd-xx2n8   Pending   false   v1
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=
+--- 17:38:18
 deploy desired,ready,updated,available: 2     2     1     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true    v2
-pod: parser-5d848f6866-gz597   Running   true    v2
-pod: parser-5f4b64b9d8-zcsxc   Running   false   v1
-endpoints ready=parser-5d848f6866-7rlcw parser-5d848f6866-gz597 notReady=parser-5f4b64b9d8-zcsxc
---- 20:14:03
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true    v2
-pod: parser-5d848f6866-gz597   Running   true    v2
-pod: parser-5f4b64b9d8-ltbmx   Running   false   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true    v1
-endpoints ready=parser-5d848f6866-gz597 parser-5f4b64b9d8-zcsxc notReady=parser-5f4b64b9d8-ltbmx
---- 20:14:05
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   true    v2
-pod: parser-5d848f6866-gz597   Running   true    v2
-pod: parser-5f4b64b9d8-ltbmx   Running   false   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true    v1
-endpoints ready=parser-5d848f6866-gz597 parser-5f4b64b9d8-zcsxc notReady=parser-5f4b64b9d8-ltbmx
---- 20:14:08
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     16m
-pod: parser-5d848f6866-7rlcw   Running   false   v2
-pod: parser-5d848f6866-gz597   Running   true    v2
-pod: parser-5f4b64b9d8-ltbmx   Running   true    v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true    v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:10
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     16m
-pod: parser-5d848f6866-gz597   Running   true   v2
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:12
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     16m
-pod: parser-5d848f6866-gz597   Running   true   v2
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:14
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:16
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:18
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:20
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:23
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:25
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:27
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:29
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:31
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 190%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:33
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 190%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:35
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 190%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:38
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 190%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:40
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 190%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:42
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 190%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:44
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 190%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:46
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:48
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:50
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:52
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:55
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:57
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:14:59
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:01
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:03
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:05
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:07
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:10
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:12
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     17m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:14
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:16
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:18
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:20
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:22
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:25
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:27
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:29
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:31
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:33
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:35
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:37
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:40
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:42
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:44
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:46
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:48
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:50
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:52
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:54
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:57
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:15:59
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:01
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:03
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:05
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:07
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:09
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:12
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     18m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:14
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:16
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:18
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:20
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:22
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:24
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:27
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:29
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:31
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 197%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:33
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 197%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:35
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 197%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:37
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 197%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:39
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 197%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:41
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 197%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:44
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 197%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:46
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:48
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:50
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:52
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:54
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:56
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:16:59
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 196%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:01
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:03
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:05
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:07
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:09
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:11
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     19m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:13
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 195%/70%   2     2     2     20m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:16
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     20m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:18
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     20m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:20
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     20m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:22
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     20m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:24
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     20m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:26
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     20m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
---- 20:17:28
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     20m
-pod: parser-5f4b64b9d8-ltbmx   Running   true   v1
-pod: parser-5f4b64b9d8-zcsxc   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-zcsxc parser-5f4b64b9d8-ltbmx notReady=
+hpa: parser   Deployment/parser   cpu: 192%/70%   2     2     2     8m35s
+pod: parser-5b7c85f5d8-dchsb   Running   true    v2
+pod: parser-5b7c85f5d8-sxblg   Running   true    v2
+pod: parser-669c9f6ccd-xx2n8   Running   false   v1
+endpoints ready=parser-5b7c85f5d8-dchsb parser-5b7c85f5d8-sxblg notReady=parser-669c9f6ccd-xx2n8
+--- 17:38:20
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 192%/70%   2     2     2     8m37s
+pod: parser-5b7c85f5d8-dchsb   Running   true    v2
+pod: parser-5b7c85f5d8-sxblg   Running   true    v2
+pod: parser-669c9f6ccd-ldhsj   Pending   false   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true    v1
+endpoints ready=parser-5b7c85f5d8-dchsb parser-669c9f6ccd-xx2n8 notReady=
+--- 17:38:22
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 192%/70%   2     2     2     8m39s
+pod: parser-5b7c85f5d8-dchsb   Running   true    v2
+pod: parser-5b7c85f5d8-sxblg   Running   true    v2
+pod: parser-669c9f6ccd-ldhsj   Running   false   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true    v1
+endpoints ready=parser-5b7c85f5d8-dchsb parser-669c9f6ccd-xx2n8 notReady=parser-669c9f6ccd-ldhsj
+--- 17:38:25
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 192%/70%   2     2     2     8m42s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-5b7c85f5d8-sxblg   Running   true   v2
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:27
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 192%/70%   2     2     2     8m44s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:29
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m46s
+pod: parser-5b7c85f5d8-dchsb   Running   true   v2
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:31
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m48s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:33
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m50s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:35
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m52s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:37
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m54s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:40
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m57s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:42
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     8m59s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:44
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m1s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:46
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m3s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:48
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m5s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:50
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m7s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:53
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m10s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:55
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m12s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:57
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m14s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:38:59
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m16s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:01
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m18s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:03
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m20s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:05
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m23s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:08
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m25s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:10
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m27s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:12
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m29s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:14
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m31s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:16
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m33s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:18
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m35s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:21
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m38s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:23
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m40s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:25
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m42s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:27
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m44s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:29
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m46s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:31
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m48s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:33
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m51s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:36
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m53s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:38
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m55s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:40
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m57s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:42
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     9m59s
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:44
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:46
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:49
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:51
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:53
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:55
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:57
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 200%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:39:59
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:01
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:04
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:06
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:08
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:10
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:12
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:14
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:16
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:19
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:21
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:23
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:25
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:27
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:29
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:32
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:34
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:36
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:38
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:40
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:42
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     10m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:44
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:47
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:49
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:51
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:53
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:55
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:57
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:40:59
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 198%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:02
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 198%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:04
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 198%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:06
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 198%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:08
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 198%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:10
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 198%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:12
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 198%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:14
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:17
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:19
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:21
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:23
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:25
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:27
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:29
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:32
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:34
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:36
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:38
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:40
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:42
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     11m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=
+--- 17:41:44
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     12m
+pod: parser-669c9f6ccd-ldhsj   Running   true   v1
+pod: parser-669c9f6ccd-xx2n8   Running   true   v1
+endpoints ready=parser-669c9f6ccd-xx2n8 parser-669c9f6ccd-ldhsj notReady=

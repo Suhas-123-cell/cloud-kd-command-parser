@@ -2,69 +2,70 @@ INFO:     Started server process [1]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-11-05 20:29:22,379 INFO model download start: s3://models/v1/ from http://host.docker.internal:8333 (attempt 1)
-2026-11-05 20:29:22,383 INFO Found credentials in environment variables.
-2026-11-05 20:29:22,463 INFO downloaded s3://models/v1/config.json (799 bytes)
-2026-11-05 20:29:22,465 INFO downloaded s3://models/v1/generation_config.json (111 bytes)
-INFO:     172.17.0.1:60474 - "GET /readyz HTTP/1.1" 503 Service Unavailable
-2026-11-05 20:29:23,616 INFO downloaded s3://models/v1/model.safetensors (281715176 bytes)
-2026-11-05 20:29:23,619 INFO downloaded s3://models/v1/special_tokens_map.json (473 bytes)
-2026-11-05 20:29:23,635 INFO downloaded s3://models/v1/tokenizer.json (3564303 bytes)
-2026-11-05 20:29:23,638 INFO downloaded s3://models/v1/tokenizer_config.json (4846 bytes)
-2026-11-05 20:29:23,640 INFO downloaded s3://models/v1/version.json (721 bytes)
-2026-11-05 20:29:23,640 INFO model download done in 1.3s
-INFO:     172.17.0.1:57196 - "GET /readyz HTTP/1.1" 503 Service Unavailable
-2026-11-05 20:29:24,862 INFO model v1 ready in 2.5s (pod 15c9648f1d4c, fault_inject=False)
-INFO:     172.17.0.1:57206 - "GET /readyz HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57218 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-08 17:47:09,482 INFO model download start: s3://models/v1/ from http://host.docker.internal:8333 (attempt 1)
+2026-11-08 17:47:09,487 INFO Found credentials in environment variables.
+2026-11-08 17:47:09,599 INFO downloaded s3://models/v1/config.json (799 bytes)
+2026-11-08 17:47:09,601 INFO downloaded s3://models/v1/generation_config.json (111 bytes)
+INFO:     172.17.0.1:63592 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+2026-11-08 17:47:10,739 INFO downloaded s3://models/v1/model.safetensors (281715176 bytes)
+2026-11-08 17:47:10,742 INFO downloaded s3://models/v1/special_tokens_map.json (473 bytes)
+2026-11-08 17:47:10,760 INFO downloaded s3://models/v1/tokenizer.json (3564303 bytes)
+2026-11-08 17:47:10,763 INFO downloaded s3://models/v1/tokenizer_config.json (4846 bytes)
+2026-11-08 17:47:10,767 INFO downloaded s3://models/v1/version.json (721 bytes)
+2026-11-08 17:47:10,767 INFO model download done in 1.3s
+INFO:     172.17.0.1:63594 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.17.0.1:63596 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+2026-11-08 17:47:12,228 INFO model v1 ready in 2.7s (pod 9e468cf59dfb, fault_inject=False)
+INFO:     172.17.0.1:63612 - "GET /readyz HTTP/1.1" 200 OK
+INFO:     172.17.0.1:63626 - "GET /readyz HTTP/1.1" 200 OK
 We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
-INFO:     172.17.0.1:57234 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57246 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57254 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57256 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57264 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57268 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57272 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57276 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57278 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57284 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57300 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57310 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57366 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57382 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57396 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57400 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57406 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57422 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57430 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57432 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57444 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57456 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57464 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57476 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57490 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57496 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:57512 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61098 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61106 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61112 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61124 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61126 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61138 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61146 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61150 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61166 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61178 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61190 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61196 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61208 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:61216 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:60690 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:60706 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:60722 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:60730 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:60732 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:60740 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:60750 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:60766 - "POST /parse HTTP/1.1" 200 OK
-INFO:     172.17.0.1:60776 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:63640 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55308 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55320 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55332 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55346 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55356 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55362 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55372 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55374 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55390 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55402 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55416 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55432 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55448 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55454 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55660 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55664 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55674 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55686 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55688 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55692 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55704 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55720 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55722 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55730 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55746 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55748 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55758 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55760 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55772 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60048 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60050 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60060 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60076 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60086 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60096 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60100 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60108 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60122 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60132 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60148 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60154 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60160 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:60170 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55618 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55620 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55628 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55638 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55644 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.17.0.1:55654 - "POST /parse HTTP/1.1" 200 OK

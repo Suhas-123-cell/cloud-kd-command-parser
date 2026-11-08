@@ -1,6 +1,6 @@
 # cgroup v2 counters read inside the container after the 50 requests
 memory.max  = 1073741824
-memory.peak = 790515712 bytes
+memory.peak = 995106816 bytes
 cpu.max     = 100000 100000
 memory.events:
 low 0
@@ -12,4 +12,4 @@ oom_group_kill 0
 
 # docker inspect
 OOMKilled=false Status=running RestartCount=0 NanoCpus=1000000000 Memory=1073741824
-highest docker stats sample: 477.9MiB
+highest docker stats sample: 607MiB

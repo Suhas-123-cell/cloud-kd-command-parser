@@ -1,18 +1,7 @@
-27m         Normal    ScalingReplicaSet              deployment/parser                Scaled up replica set parser-7b4b5b9686 to 2
-24m         Normal    SuccessfulRescale              horizontalpodautoscaler/parser   New size: 2; reason: Current number of replicas below Spec.MinReplicas
-15m         Normal    ScalingReplicaSet              deployment/parser                Scaled up replica set parser-669c9f6ccd to 1
-15m         Normal    ScalingReplicaSet              deployment/parser                Scaled up replica set parser-7b4b5b9686 to 2 from 1
-15m         Normal    ScalingReplicaSet              deployment/parser                Scaled down replica set parser-7b4b5b9686 to 1 from 2
-15m         Normal    ScalingReplicaSet              deployment/parser                Scaled down replica set parser-7b4b5b9686 to 0 from 1
-15m         Normal    ScalingReplicaSet              deployment/parser                Scaled down replica set parser-669c9f6ccd to 0 from 1
-11m         Normal    ScalingReplicaSet              deployment/parser                Scaled up replica set parser-5d848f6866 to 1
-11m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/parser   invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-11m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/parser   failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-10m         Normal    ScalingReplicaSet              deployment/parser                Scaled up replica set parser-5f4b64b9d8 to 1 from 0
-10m         Normal    ScalingReplicaSet              deployment/parser                (combined from similar events): Scaled down replica set parser-5d848f6866 to 0 from 1
-10m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/parser   failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-10m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/parser   invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-5m4s        Normal    ScalingReplicaSet              deployment/parser                Scaled up replica set parser-5f4b64b9d8 to 2 from 1
-5m4s        Normal    SuccessfulRescale              horizontalpodautoscaler/parser   New size: 2; reason: cpu resource utilization (percentage of request) above target
-4s          Normal    SuccessfulRescale              horizontalpodautoscaler/parser   New size: 1; reason: All metrics below target
-4s          Normal    ScalingReplicaSet              deployment/parser                Scaled down replica set parser-5f4b64b9d8 to 1 from 2
+6m51s       Normal    ScalingReplicaSet              deployment/parser                Scaled up replica set parser-669c9f6ccd to 2
+6m21s       Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/parser   invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+6m21s       Warning   FailedGetResourceMetric        horizontalpodautoscaler/parser   failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+5m21s       Normal    SuccessfulRescale              horizontalpodautoscaler/parser   New size: 2; reason: cpu resource utilization (percentage of request) above target
+5m21s       Normal    ScalingReplicaSet              deployment/parser                Scaled up replica set parser-669c9f6ccd to 2 from 1
+5s          Normal    SuccessfulRescale              horizontalpodautoscaler/parser   New size: 1; reason: All metrics below target
+5s          Normal    ScalingReplicaSet              deployment/parser                Scaled down replica set parser-669c9f6ccd to 1 from 2

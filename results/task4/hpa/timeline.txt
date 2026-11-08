@@ -1,5 +1,5 @@
-20:17:52 waiting for the HPA to settle at 1 replica (idle)
-20:19:02 at 1 replica; starting 4-minute load
-20:23:03 load finished; waiting for scale-down
-20:24:34 back at 1 replica(s)
-requests=1392 failures=0 failure_rate=0.000% p50=810ms p95=1200ms rps=5.81
+17:30:22 waiting for the HPA to settle at 1 replica (idle)
+17:31:02 at 1 replica; starting 4-minute load
+17:35:02 load finished; waiting for scale-down
+17:36:34 back at 1 replica(s)
+requests=1445 failures=0 failure_rate=0.000% p50=650ms p95=1000ms rps=6.03

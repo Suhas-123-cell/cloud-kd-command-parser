@@ -1,26 +1,26 @@
---- 20:09:14
+--- 17:45:02
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     12m
-pod: parser-5f4b64b9d8-5z8vl   Running   true     v1
-pod: parser-5f4b64b9d8-847bs   Running   true     v1
-pod: parser-5f4b64b9d8-jftpg   Pending   false    v1
-pod: parser-5f4b64b9d8-jn7kh   Running   true     v1
-pod: parser-5f4b64b9d8-lsct7   Pending   <none>   v1
-pod: parser-5f4b64b9d8-zc9c9   Running   true     v1
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     15m
+pod: parser-669c9f6ccd-29974   Running   true     v1
+pod: parser-669c9f6ccd-7kj2f   Running   true     v1
+pod: parser-669c9f6ccd-8x2gq   Running   true     v1
+pod: parser-669c9f6ccd-gx782   Pending   <none>   v1
+pod: parser-669c9f6ccd-r9hrt   Pending   <none>   v1
+pod: parser-669c9f6ccd-x6wx9   Running   true     v1
 endpoints ready= notReady=
---- 20:09:16
+--- 17:45:04
 deploy desired,ready,updated,available: 2     <none>   2     <none>
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     12m
-pod: parser-5f4b64b9d8-jftpg   Running   false   v1
-pod: parser-5f4b64b9d8-jn7kh   Running   true    v1
-pod: parser-5f4b64b9d8-lsct7   Running   false   v1
-pod: parser-5f4b64b9d8-zc9c9   Running   true    v1
-endpoints ready= notReady=parser-5f4b64b9d8-jftpg parser-5f4b64b9d8-lsct7
---- 20:09:18
-deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     12m
-pod: parser-5f4b64b9d8-jftpg   Running   true   v1
-pod: parser-5f4b64b9d8-jn7kh   Running   true   v1
-pod: parser-5f4b64b9d8-lsct7   Running   true   v1
-pod: parser-5f4b64b9d8-zc9c9   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-jftpg parser-5f4b64b9d8-lsct7 notReady=
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     15m
+pod: parser-669c9f6ccd-7kj2f   Running   true    v1
+pod: parser-669c9f6ccd-8x2gq   Running   true    v1
+pod: parser-669c9f6ccd-gx782   Running   false   v1
+pod: parser-669c9f6ccd-r9hrt   Running   false   v1
+endpoints ready= notReady=parser-669c9f6ccd-gx782 parser-669c9f6ccd-r9hrt
+--- 17:45:06
+deploy desired,ready,updated,available: 2     <none>   2     <none>
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     15m
+pod: parser-669c9f6ccd-7kj2f   Running   true   v1
+pod: parser-669c9f6ccd-8x2gq   Running   true   v1
+pod: parser-669c9f6ccd-gx782   Running   true   v1
+pod: parser-669c9f6ccd-r9hrt   Running   true   v1
+endpoints ready=parser-669c9f6ccd-gx782 parser-669c9f6ccd-r9hrt notReady=

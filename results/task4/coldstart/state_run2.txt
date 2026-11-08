@@ -1,26 +1,24 @@
---- 20:09:08
+--- 17:44:57
 deploy desired,ready,updated,available: 2     2     2     2
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     11m
-pod: parser-5f4b64b9d8-5z8vl   Running   true    v1
-pod: parser-5f4b64b9d8-847bs   Running   true    v1
-pod: parser-5f4b64b9d8-9tdgt   Running   true    v1
-pod: parser-5f4b64b9d8-jn7kh   Pending   false   v1
-pod: parser-5f4b64b9d8-qstwc   Running   false   v1
-pod: parser-5f4b64b9d8-zc9c9   Pending   false   v1
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     15m
+pod: parser-669c9f6ccd-29974   Running   true    v1
+pod: parser-669c9f6ccd-7kj2f   Pending   false   v1
+pod: parser-669c9f6ccd-8x2gq   Pending   false   v1
+pod: parser-669c9f6ccd-x6wx9   Running   true    v1
 endpoints ready= notReady=
---- 20:09:10
+--- 17:44:59
 deploy desired,ready,updated,available: 2     <none>   2     <none>
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     11m
-pod: parser-5f4b64b9d8-5z8vl   Running   true    v1
-pod: parser-5f4b64b9d8-847bs   Running   true    v1
-pod: parser-5f4b64b9d8-jn7kh   Running   false   v1
-pod: parser-5f4b64b9d8-zc9c9   Running   false   v1
-endpoints ready= notReady=parser-5f4b64b9d8-jn7kh parser-5f4b64b9d8-zc9c9
---- 20:09:12
-deploy desired,ready,updated,available: 2     <none>   2     <none>
-hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     11m
-pod: parser-5f4b64b9d8-5z8vl   Running   true   v1
-pod: parser-5f4b64b9d8-847bs   Running   true   v1
-pod: parser-5f4b64b9d8-jn7kh   Running   true   v1
-pod: parser-5f4b64b9d8-zc9c9   Running   true   v1
-endpoints ready=parser-5f4b64b9d8-jn7kh parser-5f4b64b9d8-zc9c9 notReady=
+hpa: parser   Deployment/parser   cpu: 199%/70%   2     2     2     15m
+pod: parser-669c9f6ccd-29974   Running   true    v1
+pod: parser-669c9f6ccd-7kj2f   Running   false   v1
+pod: parser-669c9f6ccd-8x2gq   Running   false   v1
+pod: parser-669c9f6ccd-x6wx9   Running   true    v1
+endpoints ready= notReady=parser-669c9f6ccd-7kj2f parser-669c9f6ccd-8x2gq
+--- 17:45:01
+deploy desired,ready,updated,available: 2     2     2     2
+hpa: parser   Deployment/parser   cpu: <unknown>/70%   2     2     2     15m
+pod: parser-669c9f6ccd-29974   Running   true   v1
+pod: parser-669c9f6ccd-7kj2f   Running   true   v1
+pod: parser-669c9f6ccd-8x2gq   Running   true   v1
+pod: parser-669c9f6ccd-x6wx9   Running   true   v1
+endpoints ready=parser-669c9f6ccd-7kj2f parser-669c9f6ccd-8x2gq notReady=

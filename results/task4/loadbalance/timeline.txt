@@ -1,6 +1,8 @@
 horizontalpodautoscaler.autoscaling/parser patched
-NAME                      READY   STATUS    RESTARTS   AGE   IP           NODE                 NOMINATED NODE   READINESS GATES
-parser-5f4b64b9d8-ltbmx   1/1     Running   0          11m   10.42.0.37   k3d-cc-kd-server-0   <none>           <none>
-parser-5f4b64b9d8-srwpq   1/1     Running   0          5s    10.42.0.39   k3d-cc-kd-server-0   <none>           <none>
+NAME                      READY   STATUS        RESTARTS   AGE   IP           NODE                 NOMINATED NODE   READINESS GATES
+parser-669c9f6ccd-7kj2f   1/1     Terminating   0          11s   10.42.0.22   k3d-cc-kd-server-0   <none>           <none>
+parser-669c9f6ccd-8x2gq   1/1     Terminating   0          11s   10.42.0.23   k3d-cc-kd-server-0   <none>           <none>
+parser-669c9f6ccd-gx782   1/1     Running       0          6s    10.42.0.24   k3d-cc-kd-server-0   <none>           <none>
+parser-669c9f6ccd-r9hrt   1/1     Running       0          6s    10.42.0.25   k3d-cc-kd-server-0   <none>           <none>
 horizontalpodautoscaler.autoscaling/parser patched
-requests=730 failures=0 failure_rate=0.000% p50=770ms p95=1000ms rps=6.11
+requests=742 failures=0 failure_rate=0.000% p50=630ms p95=770ms rps=6.22
