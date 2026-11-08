@@ -1,53 +1,53 @@
 {"id": "V001", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"upcoming\", \"time\": null, \"place\": null}"}
 {"id": "V002", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"sunday\", \"time\": \"five in the morning\", \"place\": null}"}
-{"id": "V003", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": \"washington\", \"place\": \"washington\"}"}
-{"id": "V004", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": \"monday\", \"place\": null}"}
+{"id": "V003", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": \"the time\", \"place\": \"washington dc\"}"}
+{"id": "V004", "prediction": "{\"intent\": \"calendar_query\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V005", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"tuesday\", \"time\": \"six pm\", \"place\": null}"}
 {"id": "V006", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"this afternoon\", \"time\": null, \"place\": null}"}
-{"id": "V007", "prediction": "{\"intent\": \"datetime_query\", \"date\": \"november\", \"time\": null, \"place\": null}"}
+{"id": "V007", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"ninth fourteenth\", \"time\": null, \"place\": null}"}
 {"id": "V008", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"this weekend\", \"time\": null, \"place\": null}"}
-{"id": "V009", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": \"central time zone\", \"place\": \"central time zone\"}"}
-{"id": "V010", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"my birthday\", \"time\": null, \"place\": \"dallas\"}"}
+{"id": "V009", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": \"central time zone\", \"place\": null}"}
+{"id": "V010", "prediction": "{\"intent\": \"calendar_query\", \"date\": null, \"time\": null, \"place\": \"dallas\"}"}
 {"id": "V011", "prediction": "{\"intent\": \"weather_query\", \"date\": \"this week\", \"time\": null, \"place\": null}"}
 {"id": "V012", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": \"pst\"}"}
-{"id": "V013", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"area\"}"}
-{"id": "V014", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"next morning\", \"time\": \"afternoon\", \"place\": null}"}
+{"id": "V013", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V014", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"this afternoon\", \"time\": null, \"place\": null}"}
 {"id": "V015", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"today\", \"time\": null, \"place\": null}"}
-{"id": "V016", "prediction": "{\"intent\": \"calendar_set\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V016", "prediction": "{\"intent\": \"calendar_query\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V017", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \"this time\", \"place\": null}"}
-{"id": "V018", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"tomorrow\", \"time\": null, \"place\": null}"}
-{"id": "V019", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
-{"id": "V020", "prediction": "{\"intent\": \"weather_query\", \"date\": null, \"time\": null, \"place\": \"our city\"}"}
+{"id": "V018", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"tomorrow\", \"time\": \"eight minute before\", \"place\": null}"}
+{"id": "V019", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V020", "prediction": "{\"intent\": \"weather_query\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V021", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
-{"id": "V022", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
-{"id": "V023", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"every june first\", \"time\": null, \"place\": null}"}
-{"id": "V024", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V022", "prediction": "{\"intent\": \"calendar_set\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V023", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"every june three\", \"time\": null, \"place\": null}"}
+{"id": "V024", "prediction": "{\"intent\": \"calendar_query\", \"date\": null, \"time\": null, \"place\": \"pennsylvania\"}"}
 {"id": "V025", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": \"new york\"}"}
-{"id": "V026", "prediction": "{\"intent\": \"weather_query\", \"date\": null, \"time\": \"five days\", \"place\": \"new york city\"}"}
+{"id": "V026", "prediction": "{\"intent\": \"weather_query\", \"date\": \"five days\", \"time\": null, \"place\": \"new york city\"}"}
 {"id": "V027", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"today\", \"time\": null, \"place\": null}"}
-{"id": "V028", "prediction": "{\"intent\": \"weather_query\", \"date\": null, \"time\": \"here\", \"place\": null}"}
-{"id": "V029", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": \"right now\", \"place\": null}"}
+{"id": "V028", "prediction": "{\"intent\": \"weather_query\", \"date\": null, \"time\": null, \"place\": \"weather_query\", \"place\": null}"}
+{"id": "V029", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V030", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \"ten am\", \"place\": null}"}
 {"id": "V031", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"today\", \"time\": null, \"place\": null}"}
 {"id": "V032", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"this year\", \"time\": null, \"place\": null}"}
 {"id": "V033", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"next tuesday\", \"time\": \"eight hundred am\", \"place\": null}"}
 {"id": "V034", "prediction": "{\"intent\": \"calendar_query\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V035", "prediction": "{\"intent\": \"alarm_query\", \"date\": \"today\", \"time\": null, \"place\": null}"}
-{"id": "V036", "prediction": "{\"intent\": \"alarm_query\", \"date\": \"seven am\", \"time\": \"seven am\", \"place\": null}"}
+{"id": "V036", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": \"seven am\", \"place\": null}"}
 {"id": "V037", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"tomorrow\", \"time\": \"seven\", \"place\": null}"}
-{"id": "V038", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"monday\", \"time\": \"six\", \"place\": \"drul\"}"}
-{"id": "V039", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"wyatt\"}"}
-{"id": "V040", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \" hour\", \"place\": null}"}
+{"id": "V038", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"monday\", \"time\": \"six\", \"place\": \"mally\"}"}
+{"id": "V039", "prediction": "{\"intent\": \"calendar_query\", \"date\": null, \"time\": null, \"place\": \"wyatt\"}"}
+{"id": "V040", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \"time\", \"place\": null}"}
 {"id": "V041", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": \"california\"}"}
-{"id": "V042", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": \"beijing\"}"}
+{"id": "V042", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": \"that city\"}"}
 {"id": "V043", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}"}
-{"id": "V044", "prediction": "{\"intent\": \"datetime_query\", \"date\": \"the fifteenth\", \"time\": null, \"place\": null}"}
+{"id": "V044", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"fifteenth\", \"time\": null, \"place\": null}"}
 {"id": "V045", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"next tuesday\", \"time\": null, \"place\": null}"}
-{"id": "V046", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"this friday\", \"time\": null, \"place\": null}"}
+{"id": "V046", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"this friday\", \"time\": null, \"place\": null}"}
 {"id": "V047", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V048", "prediction": "{\"intent\": \"calendar_remove\", \"date\": null, \"time\": \"one pm\", \"place\": null}"}
-{"id": "V049", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"first of january\", \"time\": null, \"place\": \"alexa\"}"}
-{"id": "V050", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"today\", \"time\": \"one pm\", \"place\": \"joe\"}"}
+{"id": "V049", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"first of january\", \"time\": null, \"place\": null}"}
+{"id": "V050", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"today\", \"time\": \"one pm\", \"place\": null}"}
 {"id": "V051", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V052", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"this week\", \"time\": null, \"place\": null}"}
 {"id": "V053", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"london\"}"}
@@ -56,45 +56,45 @@
 {"id": "V056", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V057", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"april second\", \"time\": null, \"place\": null}"}
 {"id": "V058", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
-{"id": "V059", "prediction": "{\"intent\": \"datetime_query\", \"date\": \"twenty second march\", \"time\": null, \"place\": null}"}
+{"id": "V059", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"the twenty second\", \"time\": null, \"place\": null}"}
 {"id": "V060", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"near me\"}"}
 {"id": "V061", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V062", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"today\", \"time\": null, \"place\": null}"}
-{"id": "V063", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"near me\"}"}
-{"id": "V064", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"this weekend\", \"time\": null, \"place\": \"iond\"}"}
-{"id": "V065", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"the four city\"}"}
-{"id": "V066", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"this time\", \"time\": null, \"place\": null}"}
+{"id": "V063", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V064", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"this weekend\", \"time\": null, \"place\": \"maine\"}"}
+{"id": "V065", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"theatre\"}"}
+{"id": "V066", "prediction": "{\"intent\": \"calendar_set\", \"date\": null, \"time\": \"this time\", \"place\": null}"}
 {"id": "V067", "prediction": "{\"intent\": \"weather_query\", \"date\": \"today\", \"time\": null, \"place\": null}"}
 {"id": "V068", "prediction": "{\"intent\": \"alarm_query\", \"date\": \"this week\", \"time\": null, \"place\": null}"}
-{"id": "V069", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"my area\"}"}
+{"id": "V069", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V070", "prediction": "{\"intent\": \"weather_query\", \"date\": \"friday\", \"time\": null, \"place\": null}"}
 {"id": "V071", "prediction": "{\"intent\": \"calendar_set\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V072", "prediction": "{\"intent\": \"calendar_query\", \"date\": \"monday\", \"time\": null, \"place\": null}"}
 {"id": "V073", "prediction": "{\"intent\": \"calendar_remove\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V074", "prediction": "{\"intent\": \"datetime_query\", \"date\": \"next saturday\", \"time\": null, \"place\": null}"}
-{"id": "V075", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"all\", \"time\": null, \"place\": \"allen\"}"}
-{"id": "V076", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"ten am\", \"time\": \"ten am\", \"place\": null}"}
-{"id": "V077", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"june third\", \"time\": null, \"place\": \"zimbabwe\"}"}
-{"id": "V078", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"wednesday\", \"time\": \"nine am\", \"place\": \"jane\"}"}
+{"id": "V075", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"recommendation_events\", \"time\": null, \"place\": null}"}
+{"id": "V076", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \"ten am\", \"place\": null}"}
+{"id": "V077", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"june three\", \"time\": null, \"place\": \"zatt\"}"}
+{"id": "V078", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"wednesday\", \"time\": \"nine am\", \"place\": null}"}
 {"id": "V079", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": \"new york city\"}"}
 {"id": "V080", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}"}
-{"id": "V081", "prediction": "{\"intent\": \"weather_query\", \"date\": \"day\", \"time\": null, \"place\": null}"}
-{"id": "V082", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \"thirty\", \"place\": null}"}
+{"id": "V081", "prediction": "{\"intent\": \"weather_query\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V082", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V083", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"today\", \"time\": null, \"place\": null}"}
 {"id": "V084", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}"}
-{"id": "V085", "prediction": "{\"intent\": \"recommendation_events\", \"date\": null, \"time\": null, \"place\": null}"}
-{"id": "V086", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"next morning\", \"time\": \"afternoon\", \"place\": null}"}
+{"id": "V085", "prediction": "{\"intent\": \"calendar_query\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V086", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"next\", \"time\": \"when time\", \"place\": null}"}
 {"id": "V087", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"february twelfth\", \"time\": \"nine am\", \"place\": null}"}
-{"id": "V088", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V088", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}"}
 {"id": "V089", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \"six thirty pm\", \"place\": null}"}
-{"id": "V090", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"next friday\", \"time\": \"noon\", \"place\": null}"}
+{"id": "V090", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"next friday\", \"time\": \"at noon\", \"place\": null}"}
 {"id": "V091", "prediction": "{\"intent\": \"datetime_query\", \"date\": null, \"time\": null, \"place\": \"paris\"}"}
-{"id": "V092", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"tomorrow\", \"time\": \"two pm\", \"place\": \"brian\"}"}
-{"id": "V093", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \"waking up in the morning\", \"place\": null}"}
-{"id": "V094", "prediction": "{\"intent\": \"recommendation_events\", \"date\": \"this week\", \"time\": null, \"place\": null}"}
-{"id": "V095", "prediction": "{\"intent\": \"alarm_set\", \"date\": \"seven thirty am\", \"time\": \"seven thirty am\", \"place\": null}"}
+{"id": "V092", "prediction": "{\"intent\": \"calendar_set\", \"date\": \"tomorrow\", \"time\": \"two pm\", \"place\": null}"}
+{"id": "V093", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": \"morning\", \"place\": null}"}
+{"id": "V094", "prediction": "{\"intent\": \"weather_query\", \"date\": \"this week\", \"time\": null, \"place\": null}"}
+{"id": "V095", "prediction": "{\"intent\": \"alarm_set\", \"date\": null, \"time\": \"seven thirty am\", \"place\": null}"}
 {"id": "V096", "prediction": "{\"intent\": \"weather_query\", \"date\": \"this week\", \"time\": null, \"place\": null}"}
 {"id": "V097", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": null, \"place\": null}"}
-{"id": "V098", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"next\", \"time\": null, \"place\": null}"}
-{"id": "V099", "prediction": "{\"intent\": \"alarm_remove\", \"date\": null, \"time\": \"eight hundred\", \"place\": null}"}
+{"id": "V098", "prediction": "{\"intent\": \"calendar_remove\", \"date\": null, \"time\": null, \"place\": null}"}
+{"id": "V099", "prediction": "{\"intent\": \"alarm_query\", \"date\": null, \"time\": \"eight hundred\", \"place\": null}"}
 {"id": "V100", "prediction": "{\"intent\": \"calendar_remove\", \"date\": \"upcoming\", \"time\": null, \"place\": null}"}

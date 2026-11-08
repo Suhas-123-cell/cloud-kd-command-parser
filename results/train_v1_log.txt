@@ -1,19 +1,19 @@
 .venv/bin/python training/train.py --config training/config.yaml 
-training on 1500 records (dataset sha256 c0f46591a608...)
+training on 1500 records (dataset sha256 4f4a19711fae...)
 huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
 To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
-epoch 1/8  loss 0.8739  (39s)
-epoch 2/8  loss 0.3909  (76s)
-epoch 3/8  loss 0.2346  (105s)
-epoch 4/8  loss 0.1610  (133s)
-epoch 5/8  loss 0.1016  (162s)
-epoch 6/8  loss 0.0636  (191s)
-epoch 7/8  loss 0.0402  (221s)
-epoch 8/8  loss 0.0181  (252s)
+epoch 1/8  loss 0.7724  (40s)
+epoch 2/8  loss 0.3413  (84s)
+epoch 3/8  loss 0.1912  (127s)
+epoch 4/8  loss 0.1135  (167s)
+epoch 5/8  loss 0.0761  (207s)
+epoch 6/8  loss 0.0447  (246s)
+epoch 7/8  loss 0.0243  (287s)
+epoch 8/8  loss 0.0087  (322s)
 huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
 To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
-saved /Users/suhasdev/Documents/230101094/models/v1/model-v1 and /Users/suhasdev/Documents/230101094/models/v1/model-v1.tar.gz (sha256 d0800d7167e527835836f42878196e76f56143add21b4011485957728e76f15d)
+saved /Users/suhasdev/Documents/230101094/models/v1/model-v1 and /Users/suhasdev/Documents/230101094/models/v1/model-v1.tar.gz (sha256 3f1e1bf1274caeefdf84d932ef66a7ea5a9cee6ca5d190c6ea70a5c2540af734)
