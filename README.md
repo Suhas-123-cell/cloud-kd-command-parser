@@ -18,8 +18,8 @@ weights from SeaweedFS (S3) at start-up, behind Traefik, with probes, an HPA and
 | **Student v1 (served)** | **100 %** | **85 %** | **56 %** |
 | Student v2 | 99 % | 86 % | 56 % |
 
-Standard load test through the Ingress (2 replicas, 4 users, 2 min): 738 requests, **0 failures**,
-p50 630 ms, p95 1,000 ms, 6.17 req/s. Raw evidence for every number is in [`results/`](results/).
+Standard load test through the Ingress (2 replicas, 4 users, 2 min): 744 requests, **0 failures**,
+p50 650 ms, p95 1,000 ms, 6.24 req/s. Raw evidence for every number is in [`results/`](results/).
 
 ## Prerequisites
 

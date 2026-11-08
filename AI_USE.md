@@ -25,6 +25,10 @@ command output under `results/`; the one exception (an overwritten first recover
   (for example `"date": "today"` for "do i have any alarms") and not valid ones.
 - **Unit tests** (`tests/`, run in CI) cover sharding, every rejection reason, de-duplication,
   schema validation, the exact `FAULT_INJECT` error body and the probe endpoints.
+- **Teacher prompt, round 2.** Before any change the round-1 teacher was re-run and reproduced the committed predictions
+  byte-for-byte; the production code path (`worker/eval_teacher.py`) then reproduced the chosen variant byte-for-byte, and
+  `scripts/teacher_prompt_round2.py` regenerates every round-2 score. The relabelled shards were checked for coverage again and
+  `make verify-clean` reproduces the new `train.sha256`.
 - **Subnets** were worked by hand in `network/subnets.md` and cross-checked with Python's `ipaddress`.
 - **Performance claims were measured, not assumed.** The AI's first container image needed ~3.9 s per
   request at 1 CPU (`results/task3/profiling.txt`). Profiling (`torch.profiler`, matmul micro-benchmarks
@@ -45,5 +49,8 @@ command output under `results/`; the one exception (an overwritten first recover
 - Its offline evaluation trusted the kit's `score.py`, which does not check the intent list. Under load,
   ~1% of requests failed because the student invented `"intent": "alarm_remove"`; the pod logs showed this,
   and a schema-constrained fallback in the decoder fixed it (re-run results in `results/task4/`).
+- Its first round-2 prompt draft quoted "near me" and "around here" as examples of non-places; a check of the prompt against
+  `validation.jsonl` showed both phrases occur there, so they were replaced by phrases that do not (the score did not change).
+  Both rounds of prompt work still used validation for decisions, which the report discloses.
 - A critic agent found report numbers that were not backed by a saved file (profiling, prompt iterations,
   NACL stress packets); these were re-run and saved under `results/` rather than kept as unsupported claims.
