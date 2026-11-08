@@ -1,9 +1,9 @@
 {
   "input": 3000,
-  "a_invalid_json": 2,
-  "b_wrong_keys": 1,
-  "c_bad_intent": 21,
-  "d_bad_slot": 257,
-  "duplicates": 45,
-  "kept": 2674
+  "a_invalid_json": 0,
+  "b_wrong_keys": 0,
+  "c_bad_intent": 0,
+  "d_bad_slot": 86,
+  "duplicates": 50,
+  "kept": 2864
 }

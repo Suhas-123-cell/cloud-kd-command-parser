@@ -1,9 +1,9 @@
-NAME            STATUS     COMPLETIONS   DURATION   AGE   CONTAINERS   IMAGES             SELECTOR
-teacher-label   Complete   2/2           24m        24m   worker       cc-kd/worker:1.0   batch.kubernetes.io/controller-uid=4178f0f1-bab3-4712-9b66-5bd7b9b4ccf4
+NAME            STATUS     COMPLETIONS   DURATION   AGE
+teacher-label   Complete   2/2           24m        24m
 
 NAME                    READY   STATUS      RESTARTS   AGE   IP           NODE                 NOMINATED NODE   READINESS GATES   JOB-COMPLETION-INDEX
-teacher-label-0-7lrms   0/1     Completed   0          24m   10.42.0.12   k3d-cc-kd-server-0   <none>           <none>            0
-teacher-label-1-m5qt9   0/1     Completed   0          24m   10.42.0.13   k3d-cc-kd-server-0   <none>           <none>            1
+teacher-label-0-kwrgr   0/1     Completed   0          24m   10.42.0.36   k3d-cc-kd-server-0   <none>           <none>            0
+teacher-label-1-ccpsh   0/1     Completed   0          24m   10.42.0.37   k3d-cc-kd-server-0   <none>           <none>            1
 
-== pod/teacher-label-0-7lrms SHARD_INDEX=0 start=2026-11-05T19:19:32Z
-== pod/teacher-label-1-m5qt9 SHARD_INDEX=1 start=2026-11-05T19:19:32Z
+== pod/teacher-label-0-kwrgr SHARD_INDEX=0 start=2026-11-08T16:18:56Z
+== pod/teacher-label-1-ccpsh SHARD_INDEX=1 start=2026-11-08T16:18:56Z

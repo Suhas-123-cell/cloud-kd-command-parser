@@ -2,12 +2,12 @@ read s3://datasets/teacher/shard-0.jsonl
 read s3://datasets/teacher/shard-1.jsonl
 {
   "input": 3000,
-  "a_invalid_json": 2,
-  "b_wrong_keys": 1,
-  "c_bad_intent": 21,
-  "d_bad_slot": 257,
-  "duplicates": 45,
-  "kept": 2674
+  "a_invalid_json": 0,
+  "b_wrong_keys": 0,
+  "c_bad_intent": 0,
+  "d_bad_slot": 86,
+  "duplicates": 50,
+  "kept": 2864
 }
-sha256 c0f46591a60892b0fe9b4d9ba6a2893bdf8747574ccece846d98bf70519cfaef
+sha256 4f4a19711fae632d513a9bebcb4283e581897a2376506794e180d1d425256287
 uploaded s3://datasets/v1/train.jsonl and train.sha256
